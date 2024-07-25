@@ -2,13 +2,24 @@
 
 Technical and non-technical documentation for Digital Trust and Verifiable Credentials
 
-**This file is the homepage of your documentation. It is mandatory and must not be deleted.**
+## About DITP
 
-## Suggested content
+The Digital Trust and Identity Program is part of the Cybersecurity and Digital Trust team at the Province of British Columbia.
 
-* Clearly define the purpose and functionality of your service, project, or application 
-  * Leverage [Service Definition](https://github.com/BCDevOps/openshift-wiki/blob/0ff5d39f767e89b1b8fac8ccda9901b3e18a672a/docs/OCP/ServiceDefinition.md) structure that exists for several services already 
-* Highlight key features and advantages
-* Emphasize main functionalities
-* How to get support
+Our focus is building tools to enable Digital Trust and supporting partners/adopter in their journey to improve their business processes and implement new ones that leverage this technology.
 
+## Patterns
+
+There are three main patterns that can be leveraged in the Digital trust space, follow the links to learn more:
+
+- [Verifier](patterns/verifier.md): verifies and consumes credentials issued by a third-party authority.
+- [Issuer](patterns/issuer.md): defines a new credential schema and is responsible for issuing and revoking credentials.
+- [Access](patterns/access.md): similar to the verifier pattern, it's used to obtain authorization to resources on the web.
+
+## Solutions
+
+Depending on which pattern you are looking to implement, the following solutions will provide a foundation to get started:
+
+- [VC-AuthN and SSO](solutions/vc-authn-sso.md): a solution that allows the use of Digital Credentials in an OIDC authentication flow. As an identity Provider service integrated with the [Pathfinder SSO Service](https://developer.gov.bc.ca/docs/default/component/css-docs) it provides a lightweight, standard approach to web application authentication that does not require deep knowledge of Digital trust patterns and tools.
+- [Traction](solutions/traction-overview.md): a Software-As-A-Service Enterprise agent service based on [Aries Cloudagent Python](https://github.com/hyperledger/aries-cloudagent-python), it provides streamlined onboarding for new adopters wanting to have full control over their Digital trust processes, from receiving and presenting Digital credentials to acting as a verifier or even an issuer.
+- [OrgBook BC](https://orgbook.gov.bc.ca): a repository of credentials for publicly available information. It contains information about entities registered as businesses in BC (data from BC registries), as well as [other permit/license credentials from different organizations](https://orgbook.gov.bc.ca/about/orgbook-data).
