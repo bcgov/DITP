@@ -1,16 +1,24 @@
-site_name: "Digital identity and Trust Program Documentation"
+site_name: "Digital Identity and Trust Program Documentation"
 site_description: "Technical and non-technical documentation for Digital Trust and Verifiable Credentials"
 docs_dir: "docs"
 repo_url: "https://github.com/bcgov/DITP"
 edit_uri: edit/main/docs
 nav:
-    - Introduction: index.md
-    - Getting started: getting-started.md
-    - Configuration: configuration.md
-    - Tips and tricks: tips-and-tricks.md
-    - About us: about-us.md
+      - Introduction: index.md
+      - Digital Trust Patterns:
+              - Overview: pattern-overview.md
+              - Access Pattern: patterns/access.md
+              - Verifier Pattern: patterns/verifier.md
+              - Issuer Pattern: patterns/issuer.md
+      - Solutions:
+              - VC-AuthN and SSO: vc-authn-sso.md
+              - Traction:
+                      - Overview: traction-overview.md
+                      - Becoming an Issuer: traction-becoming-an-issuer.md
+              - OrgBook BC: orgbook-bc.md
+      - Need Help?: need-help.md
 plugins:
-    - techdocs-core
-    - git-revision-date-localized
+      - techdocs-core
+      - git-revision-date-localized
 markdown_extensions:
-    - md_in_html
+      - md_in_html
