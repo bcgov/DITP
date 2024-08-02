@@ -11,7 +11,7 @@ There are two ways of accessing data stored in OrgBook:
 - The user interface allows the search and discovery of credentials from a web UI. This is useful for end-users trying to gather information about a known entity.
 - The [OrgBook API](https://orgbook.gov.bc.ca/api/)
 
-The API is openly accessible (for reasonably/fair use) and allows systems to integrate with OrgBook to look-up company registration records and associated data.
+The API is openly accessible (for reasonable/fair use) and allows systems to integrate with OrgBook to look-up company registration records and associated data.
 
 The swagger interface provides an easy way to discover the API endpoints, and there are [API docs](https://bcgov.github.io/orgbook-bc-api-docs) with code snippets providing examples for common use cases.
 

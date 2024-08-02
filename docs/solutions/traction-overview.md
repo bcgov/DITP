@@ -20,29 +20,17 @@ More information about becoming an issuer can be found [here](traction-becoming-
 
 ## Ledgers
 
-Traction is connected to several ledgers in read mode, which allows teh tenant to receive, present and verify credentials from issuers rooted on those ledgers - if necessary. In general, the `development` ledger can also read from `test` and `production` ledgers and the `test` environment can also read from `production`. The `production` environment is limited to production ledgers for security reasons.
+The following table describes the ledgers supported for both read and write operations, for each environment.
 
-Each environment can also connects in write mode - for tenants who become issuers - to ledgers that are of the same level.
+| Environment | [BCovrin Test](http://test.bcovrin.vonx.io) | [CANdy Dev](https://candyscan.idlab.org/txs/CANDY_DEV/domain) | [CANdy Test](https://candyscan.idlab.org/txs/CANDY_TEST/domain) | [CANdy Prod](https://candyscan.idlab.org/txs/CANDY_PROD/domain) | [Sovrin TestNet](https://indyscan.io/txs/SOVRIN_STAGINGNET/domain) | [Sovrin MainNet](https://indyscan.io/txs/SOVRIN_MAINNET/domain) |
+| ----------- | ------------------------------------------- | ------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------ | --------------------------------------------------------------- |
+| Sandbox     | Write                                       | Read                                                          | Read                                                            | Read                                                            | Read                                                               | Read                                                            |
+| Development | Write                                       | Write                                                         | Read                                                            | Read                                                            | Write                                                              | Read                                                            |
+| Test        | Write                                       | N.A.                                                          | Write                                                           | Read                                                            | Write                                                              | Read                                                            |
+| Production  | N.A.                                        | N./A.                                                         | N./A.                                                           | Write                                                           | N./A.                                                              | Write                                                           |
 
-!!! info "Info"
-Please note that an issuer can only ever connect to ONE ledger in write mode and that "moving" to another ledger is generally not recommended or supported at this time.
+!!! info "Note"
+An issuer can only connect to ONE ledger in write mode at any given time. Moving to another ledger is generally not recommended and it is not supported at this time.
 
-### Sandbox
-
-- [BCovrin Test](http://test.bcovrin.vonx.io)
-
-### Development
-
-- [CANdy Dev](https://candyscan.idlab.org/txs/CANDY_DEV/domain)
-- [BCovrin Test](http://test.bcovrin.vonx.io)
-
-### Test
-
-- [CANdy Test](https://candyscan.idlab.org/txs/CANDY_TEST/domain)
-- [BCovrin Test](http://test.bcovrin.vonx.io)
-- [Sovrin TestNet](https://indyscan.io/txs/SOVRIN_STAGINGNET/domain) (only used in special circumstances, generally for legacy issuers)
-
-### Production
-
-- [CANdy Prod](https://candyscan.idlab.org/txs/CANDY_PROD/domain)
-- [Sovrin MainNet](https://indyscan.io/txs/SOVRIN_MAINNET/domain) (only used in special circumstances, generally for legacy issuers)
+!!! warning "Limitations"
+Sovrin TestNet and MainNet ledgers are connected in write mode only for special scenarios, like temporary support of legacy issuers moving to a Traction tenant.
