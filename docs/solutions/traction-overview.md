@@ -12,7 +12,7 @@ There are several instances of Traction that can be used for different purposes:
 
 - [Sandbox](https://traction-sandbox-tenant-ui.apps.silver.devops.gov.bc.ca): this instance is completely self-serve and can be used for prototyping and discovery of short-lived projects. The sandbox is reset automatically, on the 1st and 15th day of the month.
 - [Development](https://traction-tenant-ui-dev.apps.silver.devops.gov.bc.ca): this instance would be the first step after prototyping in the `sandbox` and requires a request to be created in-app and reviewed by the DITP team.
-- [Test](https://traction-tenant-ui.apps.silver.devops.gov.bc.ca) and [Production](https://traction-tenant-ui.apps.silver.devops.gov.bc.ca) access can be requested the same way as for `development`, once the integration is ready to move further.
+- [Test](https://traction-tenant-ui-test.apps.silver.devops.gov.bc.ca) and [Production](https://traction-tenant-ui.apps.silver.devops.gov.bc.ca) access can be requested the same way as for `development`, once the integration is ready to move further.
 
 A Traction tenant provides full access to an Aries agent connected to pre-approved [ledgers](#ledgers), however the functionality to become `issuers` is not enabled by default: a request outlining the business case/requirement to become an issuer should be submitted to DITP when the tenant request is initially created, or any time after that when integrating with credential issuance processes becomes necessary.
 
