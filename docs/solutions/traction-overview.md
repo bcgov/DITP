@@ -30,7 +30,7 @@ The following table describes the ledgers supported for both read and write oper
 | Production  | N.A.                                        | N./A.                                                         | N./A.                                                           | Write                                                           | N./A.                                                              | Write                                                           |
 
 !!! info "Note"
-An issuer can only connect to ONE ledger in write mode at any given time. Moving to another ledger is generally not recommended and it is not supported at this time.
+    An issuer can only connect to ONE ledger in write mode at any given time. Moving to another ledger is generally not recommended and it is not supported at this time.
 
 !!! warning "Limitations"
-Sovrin TestNet and MainNet ledgers are connected in write mode only for special scenarios, like temporary support of legacy issuers moving to a Traction tenant.
+    Sovrin TestNet and MainNet ledgers are connected in write mode only for special scenarios, like temporary support of legacy issuers moving to a Traction tenant.

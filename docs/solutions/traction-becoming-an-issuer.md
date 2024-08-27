@@ -16,4 +16,4 @@ When becoming an issuer, the agent will be connected with the role of `author` t
 Endorsement requests are reviewed by the Digital Trust team and acted upon based on the published Governance. The Digital trust team may request adjustments in naming or other schema/credential definition settings in order to approve an endorsement request.
 
 !!! info "Note"
-It is generally allowed to publish new schemas and credential definitions in the development environment. Test and Production are gated behind an endorser that respects the published Governance.
+    It is generally allowed to publish new schemas and credential definitions in the development environment. Test and Production are gated behind an endorser that respects the published Governance.

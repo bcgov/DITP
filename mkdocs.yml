@@ -17,6 +17,7 @@ nav:
                             - Becoming an Issuer: solutions/traction-becoming-an-issuer.md
                   - OrgBook BC: solutions/orgbook-bc.md
                   - Endorser Service: solutions/endorser-service.md
+        - ACA-Py Integration How-to: acapy-integration-howto.md
         - About Us: about-us.md
 plugins:
         - techdocs-core
