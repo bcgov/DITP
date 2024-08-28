@@ -8,7 +8,7 @@ When requesting a new Traction tenant, you will be provided with a set of creden
 
 ### Tenant ID and Api Keys
 
-Similarly to `wallet_id` and `wallet_key`, `tenant_id` and `api_key` can be used to authenticate with a Traction tenant. While the value for `tenant_id` will always be the same (like a username), a tenant can independently create and delete as many API keys keys as desired. API keys can be used to provide different members of the development team with their own credentials to authenticate against a tenant, and are the preferred method to provide external applications with access to the tenant. When an API key is deleted, it ceases to function immediately and it cannot be recovered.
+Similarly to `wallet_id` and `wallet_key`, `tenant_id` and `api_key` can be used to authenticate with a Traction tenant. While the value for `tenant_id` will always be the same (like a username), a tenant can independently create and delete as many API keys as desired. API keys can be used to provide different members of the development team with their own credentials to authenticate against a tenant, and are the preferred method to provide external applications with access to the tenant. When an API key is deleted, it ceases to function immediately and it cannot be recovered.
 
 API Keys can be managed from the section with the same name in the Tenant UI, accessible by clicking the account image in the top-right corner.
 
