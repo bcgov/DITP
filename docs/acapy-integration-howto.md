@@ -1,6 +1,6 @@
-# ACA-Py Integration How-To
+# Integration How-To
 
-Implementing a custom integration with an ACA-Py agent is fairly straightforward: the agent exposes a set of REST APIs that cover all of the Digital trust functionality that may be implemented. There are, however, some concepts that need to be considered when making requests to these endpoints. This page outlines some of the most important concepts and "gotchas" that need to be considered.
+Implementing a custom integration with an ACA-Py/Traction agent is fairly straightforward: the agent exposes a set of REST APIs that cover all of the Digital trust functionality that may be implemented. There are, however, some concepts that need to be considered when making requests to these endpoints. This page outlines some of the most important concepts and "gotchas" that need to be considered.
 
 ## Authentication
 
@@ -15,6 +15,9 @@ API Keys can be managed from the section with the same name in the Tenant UI, ac
 ### Obtaining an access token
 
 To authenticate using tenant ID and API key, execute a `POST` request to the `/multitenancy/tenant/{tenant_id}/token` endpoint. This will return a JWT that should be added in the `Authorization` header as `Bearer <jwt-that-was-obtained>` to make requests as that tenant.
+
+!!! warning "Token Lifecycle"
+    Once a valid token is issued, there is no need to re-authenticate for the subsequent requests until the token expires. Expiry is configured by the system administrator and its validity is currently set to 24 hours. Consuming applications should *NOT* request a new token before every PI request, as this would generate a significant amount of overhead in the system. Issued tokens should be stored in the application's execution context and their expiry should be checked before submitting a request to ACA-Py/Traction: if the token is expired (or very close to being expired) a new token should be requested using Tenant ID and api-key.
 
 ## Webhooks
 
