@@ -6,7 +6,7 @@ edit_uri: edit/main/docs
 nav:
         - Introduction: index.md
         - Digital Trust Patterns:
-                  - Overview: overview.md
+                  - Overview: patterns/overview.md
                   - Access Pattern: patterns/access.md
                   - Verifier Pattern: patterns/verifier.md
                   - Issuer Pattern: patterns/issuer.md
