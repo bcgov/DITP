@@ -19,6 +19,6 @@ There are, however, a couple of things specific to VC-AuthN that your service wi
 
 ## Limitations
 
-VC-AuthN has a different approach to "traditional" identity providers, and it does not store a user database. For this reason, and because there may be any combination of credentials in an authentication request, it is not possible for the IdP to provide a unique identifier to recognize returning users.
+VC-AuthN has a different approach when compared to "traditional" identity providers, and it does not store a user database. For this reason, and because there may be any combination of credentials in an authentication request, it is not possible for the IdP to provide a unique identifier to recognize returning users.
 
 The consuming applications (clients) are therefore responsible for reconciling user access requests to the same user by using the attributes exposed as part of the proof-request or by other mechanism.
