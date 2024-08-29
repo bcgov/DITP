@@ -13,6 +13,6 @@ Please refer to the [VC-AuthN OIDC](../solutions/vc-authn-sso.md) page for addit
 
 ## Direct Access
 
-For more advanced interaction, a direct access pattern may be considered: this will provide the application with full control over the interaction teh same way as if it was a [verifier](verifier.md).
+For more advanced interaction, a direct access pattern may be considered: this will provide the application with full control over the interaction the same way as if it was a [verifier](verifier.md).
 
 Direct access, however, requires a significantly higher amount of work when compared to OIDC based access since the application team will be responsible for directly integrating with [Traction's](../solutions/traction-overview.md) APIs to create and process proof-requests as well as developing a custom authentication framework.
