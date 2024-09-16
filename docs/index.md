@@ -1,16 +1,16 @@
-# Digital Identity and Trust Program
+# Digital Trust
 
 Technical and non-technical documentation for Digital Trust and Verifiable Credentials
 
-## About DITP
+## About Digital Trust (DT)
 
-The Digital Trust and Identity Program is part of the Cybersecurity and Digital Trust team at the Province of British Columbia.
+Digital Trust is part of the Cybersecurity and Digital Trust (CDT) team at the Province of British Columbia.
 
 Our focus is building tools to enable Digital Trust and supporting partners/adopter in their journey to improve their business processes and implement new ones that leverage this technology.
 
 ## Patterns
 
-There are three main patterns that can be leveraged in the Digital trust space, follow the links to learn more:
+There are three main patterns that can be leveraged in the Digital Trust space, follow the links to learn more:
 
 - [Verifier](patterns/verifier.md): verifies and consumes credentials issued by a third-party authority.
 - [Issuer](patterns/issuer.md): defines a new credential schema and is responsible for issuing and revoking credentials.

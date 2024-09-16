@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: digital-identity-and-trust-program
-  title: Digital Identity and Trust Program
+  name: digital-trust
+  title: Digital Trust
   description: Technical and non-technical documentation for Digital Trust and
     Verifiable Credentials
   annotations:
