@@ -1,7 +1,7 @@
 [![Package Status](https://github.com/bcgov/DITP/actions/workflows/publish.yaml/badge.svg)](https://github.com/bcgov/DITP/actions/workflows/publish.yaml)
 
 
-# digital-identity-and-trust-program-documentation
+# digital-trust-documentation
 
 Technical and non-technical documentation for Digital Trust and Verifiable Credentials
 

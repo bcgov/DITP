@@ -1,10 +1,10 @@
 version: 1
 data_management_roles:
-  product_owner: 
+  product_owner:
 product_information:
   ministry: CITZ
-  product_acronym: DITP
+  product_acronym: DT
   product_description: Technical and non-technical documentation for Digital Trust and Verifiable Credentials
-  product_name: 
+  product_name:
 product_technology_information:
   hosting_platforms: Private-Cloud-Openshift
