@@ -1,6 +1,6 @@
 # Access
 
-In the access pattern, a system will require users to prove that they can access its functionalities by presenting information contained in one or more verifiable credentials. Depending on the needs of each integration, there are two ways to enable Digital trust Access in your application:
+In the access pattern, a system will require users to prove that they can access its functionalities by presenting information contained in one or more verifiable credentials. Depending on the needs of each integration, there are two ways to enable Digital Trust Access in your application:
 
 - OIDC based access
 - Direct access

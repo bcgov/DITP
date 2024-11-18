@@ -2,7 +2,7 @@
 
 ## What is Traction
 
-[Traction](https://github.com/bcgov/traction) is an application built on top of [Aries Cloudagent Python](https://github.com/hyperledger/aries-cloudagent-python) to facilitate the provisioning and management of tenant agents. With Traction, the DITP team does not need to prepare and deploy new agent instances for each adopter: users submit a request for a tenant and are able to self check-in and manage their settings when approved.
+[Traction](https://github.com/bcgov/traction) is an application built on top of [ACA-Py](https://github.com/openwallet-foundation/aries-cloudagent-python) to facilitate the provisioning and management of tenant agents. With Traction, the DITP team does not need to prepare and deploy new agent instances for each adopter: users submit a request for a tenant and are able to self check-in and manage their settings when approved.
 
 ## Tenants
 

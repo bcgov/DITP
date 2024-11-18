@@ -1,6 +1,6 @@
 # Integration How-To
 
-Implementing a custom integration with an ACA-Py/Traction agent is fairly straightforward: the agent exposes a set of REST APIs that cover all of the Digital trust functionality that may be implemented. There are, however, some concepts that need to be considered when making requests to these endpoints. This page outlines some of the most important concepts and "gotchas" that need to be considered.
+Implementing a custom integration with an ACA-Py/Traction agent is fairly straightforward: the agent exposes a set of REST APIs that cover all of the Common Digital Credential Service functionality that may be implemented. There are, however, some concepts that need to be considered when making requests to these endpoints. This page outlines some of the most important concepts and "gotchas" that need to be considered.
 
 ## Authentication
 

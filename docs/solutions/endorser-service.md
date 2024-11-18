@@ -2,7 +2,7 @@
 
 An Endorser Service is responsible for authorizing write transactions to each one of the ledgers supported by BCGov. An overview of the ledgers available in read/write mode can be found [here](traction-overview.md#ledgers).
 
-When a write operation such as publishing a new schema definition to the ledger is required, tenant administrators will need to request authorization to the Digital trust team. Each request for endorsement will be reviewed and, if the governance terms are respected, will be approved.
+When a write operation such as publishing a new schema definition to the ledger is required, tenant administrators will need to request authorization to the Digital Trust team. Each request for endorsement will be reviewed and, if the governance terms are respected, will be approved.
 
 !!! info "Note"
     Endorsement requests in the `dev` environment will be automatically approved in order to facilitate rapid prototyping and development of new solutions, once a connection with the endorser agent is established. `test` and `prod`, however, will require a DITP member to review the request and approve it before the transaction can be written and completed.

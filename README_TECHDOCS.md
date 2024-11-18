@@ -1,9 +1,9 @@
 [![Package Status](https://github.com/bcgov/DITP/actions/workflows/publish.yaml/badge.svg)](https://github.com/bcgov/DITP/actions/workflows/publish.yaml)
 
 
-# digital-trust-documentation
+# common-hosted-digital-credential-service-documentation
 
-Technical and non-technical documentation for Digital Trust and Verifiable Credentials
+Technical and non-technical documentation for the Common Hosted Digital Credential Service
 
 ## About
 

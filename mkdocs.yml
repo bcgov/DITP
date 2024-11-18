@@ -1,5 +1,5 @@
-site_name: "Digital Trust"
-site_description: "Technical and non-technical documentation for Digital Trust and Verifiable Credentials"
+site_name: "Common Hosted Digital Credential Service"
+site_description: "Technical and non-technical documentation for the Common Hosted Digital Credential Service"
 docs_dir: "docs"
 repo_url: "https://github.com/bcgov/DITP"
 edit_uri: edit/main/docs

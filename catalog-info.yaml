@@ -2,9 +2,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: digital-trust
-  title: Digital Trust
-  description: Technical and non-technical documentation for Digital Trust and
-    Verifiable Credentials
+  title: Common Hosted Digital Credential Service
+  description: Technical and non-technical documentation for the Common Hosted Digital Credential Service
   annotations:
     github.com/project-slug: bcgov/DITP
     backstage.io/techdocs-ref: dir:.
