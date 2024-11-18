@@ -4,7 +4,7 @@ data_management_roles:
 product_information:
   ministry: CITZ
   product_acronym: DT
-  product_description: Technical and non-technical documentation for Digital Trust and Verifiable Credentials
+  product_description: Technical and non-technical documentation for the Common Hosted Digital Credential Service
   product_name:
 product_technology_information:
   hosting_platforms: Private-Cloud-Openshift
