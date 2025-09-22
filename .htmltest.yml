@@ -1,0 +1,6 @@
+DirectoryPath: "site"
+TestFilesConcurrently: true
+IgnoreExternalBrokenLinks: true
+IgnoreInternalBrokenLinks: false
+IgnoreMissingAlt: true
+IgnoreCanonicalBrokenLinks: true

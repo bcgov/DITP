@@ -2,25 +2,55 @@ site_name: "Common Hosted Digital Credential Service"
 site_description: "Technical and non-technical documentation for the Common Hosted Digital Credential Service"
 docs_dir: "docs"
 repo_url: "https://github.com/bcgov/DITP"
-edit_uri: edit/main/docs
+edit_uri: edit/main/docs/
+site_url: "https://developer.gov.bc.ca/docs/default/component/digital-trust"
 nav:
-        - Introduction: index.md
-        - Digital Trust Patterns:
-                  - Overview: patterns/overview.md
-                  - Access Pattern: patterns/access.md
-                  - Verifier Pattern: patterns/verifier.md
-                  - Issuer Pattern: patterns/issuer.md
-        - Solutions:
-                  - VC-AuthN and SSO: solutions/vc-authn-sso.md
-                  - Traction:
-                            - Overview: solutions/traction-overview.md
-                            - Becoming an Issuer: solutions/traction-becoming-an-issuer.md
-                  - OrgBook BC: solutions/orgbook-bc.md
-                  - Endorser Service: solutions/endorser-service.md
-        - Integration How-to: acapy-integration-howto.md
-        - About Us: about-us.md
+  - Introduction: index.md
+  - Digital Trust Patterns:
+    - Overview: patterns/overview.md
+    - Access Pattern: patterns/access.md
+    - Verifier Pattern: patterns/verifier.md
+    - Issuer Pattern: patterns/issuer.md
+  - Solutions:
+    - VC-AuthN and SSO: solutions/vc-authn-sso.md
+    - Becoming a Verifier: solutions/becomingaverifier.md
+    - Traction:
+      - Overview: solutions/traction-overview.md
+      - Becoming an Issuer: solutions/traction-becoming-an-issuer.md
+    - OrgBook BC: solutions/orgbook-bc.md
+    - Endorser Service: solutions/endorser-service.md
+  - Governance:
+    - Overview: governance/index.md
+    - Business Ecosystem:
+      - Overview: governance/business/index.md
+      - Digital Business Card: governance/business/digital-business-card-v1.md
+    - Person Ecosystem:
+      - Overview: governance/person/index.md
+      - Person Credential: governance/person/person-cred-doc.md
+    - Employment Ecosystem:
+      - Overview: governance/employment/index.md
+      - Contractor Credential: governance/employment/contractor-credential/governance.md
+    - Justice Ecosystem:
+      - Overview: governance/justice/index.md
+      - Court Services Branch: governance/justice/court-services-branch/governance.md
+      - Legal Professional: governance/justice/legal-professional/governance.md
+    - Mining Ecosystem:
+      - Overview: governance/mining/index.md
+      - BC Mines Act Permit:
+        - Overview: governance/mining/bc-mines-act-permit/governance-json-ld.md
+        - Version 1.1.1: governance/mining/bc-mines-act-permit/1.1.1/governance.md
+      - Major Mines Office: governance/mining/major-mines-office/governance.md
+    - Pilots:
+      - Overview: governance/pilots/index.md
+      - BC Petroleum and Natural Gas Title:
+        - Overview: governance/pilots/bc-petroleum-and-natural-gas-title/index.md
+        - Vocabulary: governance/pilots/bc-petroleum-and-natural-gas-title/vocabulary.md
+      - Tenure Branch: governance/pilots/tenure-branch/governance.md
+    - Credential Template: governance/credential_template.md
+  - Integration How-to: acapy-integration-howto.md
+  - About Us: about-us.md
 plugins:
-        - techdocs-core
-        - git-revision-date-localized
+  - techdocs-core
+  - git-revision-date-localized
 markdown_extensions:
         - md_in_html
