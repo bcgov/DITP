@@ -5,6 +5,10 @@
 # General
 .env
 
+# MkDocs
+site/
+build/
+
 # Visual Studio Code
 .vscode
 .idea/*
