@@ -62,7 +62,7 @@ The DBC credential is intended to be used in a wide range of contexts, both alon
         The DBC credential is currently only available to individuals whose identity and relationship to the business are well established. Currently, they must meet the following criteria:
         <ul>
             <li>The business is a Sole Proprietorship, General Partnership, or Benefit Company that was originally registered in the modern BC Registries system</li>
-            <li>The individual authenticated to BC Registries using their BC Services Card digital identity, is affiliated to the business through a BC Registries Account that can manage the business, and is a Proprietor, Partner, or Director of the business</li>
+            <li>The individual authenticated to BC Registries using their BC Services Card digital identity, is affiliated with the business through a BC Registries Account that can manage the business, and is a Proprietor, Partner, or Director of the business</li>
         </ul>
     </td>
 </tr>
