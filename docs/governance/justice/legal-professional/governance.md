@@ -76,17 +76,17 @@ This credential uses the [Hyperledger AnonCreds](https://github.com/hyperledger/
 ### 6.2 Issuer List
 The Governing Authority of this Credential document attests that the following issuer information is accurate and can be relied upon by verifiers.
 | Environment | Issuer Name | Issuer DID |
-|------|------|-------|
-| CANdy Production  | Law Society of British Columbia     | QzLYGuAebsy3MXQ6b1sFiT   |
-| CANdy Test  | Law Society of British Columbia     | MLvtJW6pFuYu4NnMB14d29   |
+|---|---|---|
+| CANdy Production | Law Society of British Columbia | QzLYGuAebsy3MXQ6b1sFiT |
+| CANdy Test | Law Society of British Columbia | MLvtJW6pFuYu4NnMB14d29 |
 
-### 5.3 Schema Implementation
+### 6.3 Schema Implementation
 |Environment|Ledger|Schema ID|
 |---|---|---|
 |CANdy Production|[legal-professional](https://candyscan.idlab.org/tx/CANDY_PROD/domain/2351)|QzLYGuAebsy3MXQ6b1sFiT:2:legal-professional:1.0|
 |CANdy Test|[legal-professional](https://candyscan.idlab.org/tx/CANDY_TEST/domain/248)|MLvtJW6pFuYu4NnMB14d29:2:legal-professional:1.0|
 
-### 5.4 Credential Implementation
+### 6.4 Credential Implementation
 |Environment|Ledger|Credential Definition ID|OCA Bundle|
 |---|---|---|---|
 |CANdy Production|[lawyer](https://candyscan.idlab.org/tx/CANDY_PROD/domain/2352)|QzLYGuAebsy3MXQ6b1sFiT:3:CL:2351:lawyer|[Lawyer PROD OCA](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/bcgov-digital-trust/LSBC/Lawyer/Prod)|
