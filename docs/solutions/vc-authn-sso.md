@@ -2,7 +2,7 @@
 
 [VC-AuthN OIDC](https://github.com/bcgov/vc-authn-oidc) is an identity provider compatible with the OpenID Connect protocol, that uses Verifiable credentials as authentication method.
 
-The service is composed of an agent ([ACA-Py](https://github.com/openwallet-foundation/aries-cloudagent-python)) that is responsible for the secure communication and exchange nd credentials, and a controller that "drives" the agent to build authentication requests and translate them into the OIDC protocol.
+The service is composed of an agent ([ACA-Py](https://github.com/openwallet-foundation/acapy)) that is responsible for the secure communication and exchange of credentials, and a controller that "drives" the agent to build authentication requests and translate them into the OIDC protocol.
 
 ## Getting Started
 
