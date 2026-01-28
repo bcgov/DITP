@@ -15,11 +15,10 @@ This document describes the Law Society of British Columbia's (LSBC) use of the 
 ## 2. Credential Overview
 This credential represents proof that a Lawyer in British Columbia is in good standing with the Law Society of British Columbia. This credential, effective January 15th, 2025, is available for Practicing Lawyers to hold in the BC Wallet App as "Lawyer Credential".
 Note: This credential supersedes the Member Card credential previously issued to lawyers from LSBC.
-|              |                                                                |
-|-------------------------|---------------------------------------------------------------------------------|
-| **Credential:**         | Lawyer Credential                                          |
-| **Schema:**             | Legal Professional                                          |
-| **Issuer:**             | Law Society of British Columbia (LSBC) <br/> [https://www.lawsociety.bc.ca/](https://www.lawsociety.bc.ca/) |     
+
+- **Credential**: Lawyer Credential
+- **Schema**: Legal Professional
+- **Issuer**: Law Society of British Columbia (LSBC) [https://www.lawsociety.bc.ca/](https://www.lawsociety.bc.ca/)
 
 ## 3. Governance & Legal
 
@@ -75,10 +74,10 @@ This credential uses the [Hyperledger AnonCreds](https://github.com/hyperledger/
 
 ### 6.2 Issuer List
 The Governing Authority of this Credential document attests that the following issuer information is accurate and can be relied upon by verifiers.
-| Environment | Issuer Name | Issuer DID |
-|---|---|---|
+| Environment      | Issuer Name                     | Issuer DID              |
+|------------------|---------------------------------|-------------------------|
 | CANdy Production | Law Society of British Columbia | QzLYGuAebsy3MXQ6b1sFiT |
-| CANdy Test | Law Society of British Columbia | MLvtJW6pFuYu4NnMB14d29 |
+| CANdy Test       | Law Society of British Columbia | MLvtJW6pFuYu4NnMB14d29 |
 
 ### 6.3 Schema Implementation
 |Environment|Ledger|Schema ID|
