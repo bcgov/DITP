@@ -11,7 +11,7 @@ The Digital Business Card credential is issued by the Government of British Colu
 | Ver.      | Date | Notes |
 | ----------- | ----------- | ----------- |
 | <b>1.0</b>      | 17-Nov-2023       | Initial release, limited to proprietors who registered their Sole Proprietorships |
-| <b>1.1</b>      | 16-May-2025       | Added new entities (General Partnerships, Benefit Companies) and roles that can self-issue |
+| <b>1.1</b>      | 21-Jan-2026       | Added new entities (General Partnerships, Benefit Companies) and roles that can self-issue <br>(originally published 16-May-2025, corrected in this update) |
 
 ## Credential Overview
 The Digital Business Card (DBC) credential is a verifiable credential (VC) issued to individuals to enable them to prove to other parties (“verifiers”) that the individual is affiliated with a business registered or incorporated at BC Registries. Additionally, the credential includes verifiable information about both the individual and the business.
@@ -42,7 +42,9 @@ The DBC credential is intended to be used in a wide range of contexts, both alon
   </tr>
   <tr>
     <th>Credential</th>
-        <td>NAME, version 1.0<ul><li>Cred Def ID: <a href="https://candyscan.idlab.org/tx/CANDY_PROD/domain/351">AcZpBDz3oxmKrpcuPcdKai:3:CL:350:default</a></li></ul></td>
+        <td>
+          Digital Business Card, version 1.0
+          <ul><li>Cred Def ID: <a href="https://candyscan.idlab.org/tx/CANDY_PROD/domain/351">AcZpBDz3oxmKrpcuPcdKai:3:CL:350:default</a></li></ul></td>
   </tr>
   <tr>
     <th>Data Registry</th>
@@ -60,7 +62,7 @@ The DBC credential is intended to be used in a wide range of contexts, both alon
         The DBC credential is currently only available to individuals whose identity and relationship to the business are well established. Currently, they must meet the following criteria:
         <ul>
             <li>The business is a Sole Proprietorship, General Partnership, or Benefit Company that was originally registered in the modern BC Registries system</li>
-            <li>The individual authenticated to BC Registries using their BC Services Card digital identity, and is either (a.) an Account Administrator or an Account Coordinator for the business, or (b.) is the Account User who registered the business</li>
+            <li>The individual authenticated to BC Registries using their BC Services Card digital identity, is affiliated with the business through a BC Registries Account that can manage the business, and is a Proprietor, Partner, or Director of the business</li>
         </ul>
     </td>
 </tr>
@@ -72,7 +74,7 @@ The DBC credential is intended to be used in a wide range of contexts, both alon
             <li>The individual’s name is from the BC Services Card digital identity; they are ultimately from subject’s Canadian foundational identity unless taken from marriage documents</li>
             <li>Business information is from the BC Registries system; some of this is reported by the business via filings</li>
             <li>The Credential ID is system-generated</li>
-            <li>CRA Business Number is provided directly to the BC Registries system from the Canada Revenue Agency system</li>
+            <li>CRA Business Number is provided directly to the BC Registries system for the business from the Canada Revenue Agency system</li>
         </ul>
     </td>
 </tr>
@@ -108,17 +110,31 @@ Attributes are fully described below in the [Attributes](#bookmark=id.d4k15yq1kv
 | Registered On | <code>registered_on_dateint</code> | Integer |
 | Company Status | <code>company_status</code> | String |
 
+## Governance and Legal
+
+### Governing Authority & Administrative Authority
+The Province of British Columbia is the governing authority and administrative authority for the Digital Business Card credential.
+[https://glossary.trustoverip.org/#term:governing-body]
+[https://glossary.trustoverip.org/#term:administering-body]
+
+### Legal
+
+#### For Verifiers
+Not applicable
+
+#### For End Users
+The Terms of Use for this credential as it relates to End Users is documented here: [Digital Business Card Terms of Use](https://www2.gov.bc.ca/gov/content/employment-business/business/managing-a-business/permits-licences/digital-business-card-terms-of-use)
 
 ## Credential Details
 
 ### Issuer
 
-The Digital Business Card credential is issued by the Government of British Columbia through Registries and Online Services (“BC Registries”), part of Service BC in the British Columbia Ministry of Citizens’ Services. BC Registries is responsible for the creation (through incorporation or registration) of businesses, not-for-profit societies, cooperative associations, and sole proprietors (collectively, “businesses”).
+The Digital Business Card credential is issued by the Government of British Columbia through Registries and Online Services (“BC Registries”), part of Service BC in the British Columbia Ministry of Citizens’ Services. BC Registries is responsible for the creation (through incorporation or registration) of corporations, not-for-profit societies, cooperative associations, general partnerships and sole proprietors (collectively, “businesses”).
 
 BC Registries is responsible for:
 
-- Administering the Partnership Act and Business Corporations Act, including processing filings by businesses (e.g., to register a sole proprietorship or to change the Directors of a corporation) and issuing records
-- Operating BC Registries and Online Services, which allows representatives of companies to create accounts, make filings and record requests online, and delegate access to others
+- Administering the <em>[Partnership Act](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96348_01)</em> and <em>[Business Corporations Act](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/02057_00)</em>, including processing filings by businesses (e.g., to register a sole proprietorship or to change the Directors of a corporation) and issuing records
+- Operating BC Registries and Online Services, which allows representatives of businesses to create accounts, make filings and record requests online, and delegate access to others
 
 ### Schema and Credential Definition Governance
 
@@ -128,7 +144,7 @@ The Digital Business Card credential definition implements the Digital Business 
 
 The data in the DBC credential comes from the BC Registries system, which generates the data for some attributes and receives from external sources the data for other attributes. Possible data sources are:
 
-- **Business Filing** – the information is provided from a filing made by or on behalf of the business to BC Registries, as part of the business’ requirement to keep its information current as part of its obligation under the relevant legislation (e.g., [Partnership Act](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96348_01), [Business Corporations Act](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/02057_00))
+- **Business Filing** – the information is provided from a filing made by or on behalf of the business to BC Registries, as part of the business’ requirement to keep its information current as part of its obligation under the relevant legislation (<em>[Partnership Act](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/96348_01)</em>, <em>[Business Corporations Act](https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/02057_00)</em>)
 - **BC Registries system** – these include system generated information, such as identifiers and timestamps, as well as information derived from user actions (e.g., which individual was the person who created the business in the BC Registries system)
 - **BC Services Card digital identity** – the identity information about the individual is created when the individual first accesses the BC Registries system using their BC Services Card digital identity and authenticator. The BC Services Card digital identity is a high assurance credential, with the individual’s name matching the name on their foundational identity document
 - **Canada Revenue Agency** – the information is provided to the BC Registries system directly from a CRA system
@@ -141,16 +157,21 @@ When a DBC credential is issued, its data reflects the current records in BC Reg
 
 ### Assurance
 
-In order to minimize risk to BC Registries, verifiers, companies, and the individuals who represent companies, in the initial production release MVP phase (minimum valuable product), the DBC credential will only be issued to individuals when BC Registries is confident in both:
+In order to minimize risk to BC Registries, verifiers, companies, and the individuals who represent companies, the DBC credential will only be issued to individuals when BC Registries is confident in both:
 
 - Their identity
 - Their relationship to the business
 
-For this reason, in the MVP, the only individuals who may obtain a DBC credential from BC Registries are:
+For this reason, the only individuals who may obtain a DBC credential from BC Registries are those who:
 
-- Sole Proprietorship Business Owners who accessed the new Business Registries system using the BC Services Card mobile application and self-registered their own proprietorship
+- Access the [BC Registries system](https://www.bcregistry.gov.bc.ca/en-CA/login) with their BC Services Card digital identity, described in more detail below
+- Have a relationship with the business by being part of an account that can access the business in the new BC Registries system
+- Have a name that matches the name of:
+  - the proprietor (for a sole proprietorship)
+  - a partner (for a general partnership)
+  - a director (for a corporation)
 
-#### BC Services Card
+#### BC Services Card digital identity
 
 The BC Services Card digital identity is used by BC Registries for both its identity information and the security of its two-factor authentication. By design, the BC Services Card digital identity meets the BC Office of the CIO [_Identity Assurance Standard_](https://www2.gov.bc.ca/assets/gov/government/services-for-government-and-broader-public-sector/information-technology-services/standards-files/identity_assurance_standard.pdf) requirements for a High (3) Identity Assurance Level. The BC Services Card digital identity has been assessed twice, in 2019 and 2021, by the Treasury Board of Canada Secretariat (TBS) against the Public Sector Profile of the Pan-Canadian Trust Framework (PSP-PCTF). In both cases, it was assessed as being a Trusted Digital Identity Level 3 (high), as defined in Appendix A of the TBS [_Directive on Identity Management_](https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=16577).
 
@@ -159,13 +180,12 @@ The BC Services Card digital identity is used by BC Registries for both its iden
 A DBC credential will be revoked in the following cases:
 
 1. The individual is issued a new DBC credential for a business for which they already have been issued one or more credentials. An individual may only have one active DBC credential for a given business at a time, and when they are issued a new one, all previously issued active DBC credentials will be revoked
-1. The individual was able to self-issue the credential but, due to a change in their role within the BC Registries system, now cannot
+1. The individual is no longer part of an account that can access the business in the BC Registries system
+1. The individual no longer is a proprietor (for a sole proprietorship), a partner (for a general partnership), or a director (for a corporation)
 1. A rare event has occurred, such as a change to the company identifier or the business is administratively dissolved by the Registrar
 
 A DBC credential will be revoked and re-issued in the following cases:
 
-1. The individual’s identity information is updated in the BC Registries system
-1. The individual’s role at the business is updated in the BC Registries system
 1. The Business Name or CRA Business Number is updated in the BC Registries system
 1. The business dissolves itself in the BC Registries system – the new DBC credential will have an updated Company Status attribute
 
@@ -408,11 +428,11 @@ Note that the Person credential gets the values for its name attribute values fr
                 <li>Proprietor</li>
                 <li>Partner</li>
                 <li>Director</li>
-                <li><em>blank</em>, indicating that the individual does not have any of the other roles, or if their role(s) cannot be confidently determined by BC Registries</li>
             </ul>
             <li>In future, allowable values may include:</li>
             <ul>
                 <li>Incorporator</li>
+                <li><em>blank</em>, indicating that the individual does not have any of the other roles, or if their role(s) cannot be confidently determined by BC Registries</li>
             </ul>
             <li>An individual who is an Incorporator may have another role. In future, multiple roles will be separated by commas</li>
         </ul>
@@ -420,7 +440,7 @@ Note that the Person credential gets the values for its name attribute values fr
   </tr>
   <tr>
     <th>Examples</th>
-    <td><code>Partner</code><br></br><code>Proprietor</code><br></br><code>Incorporator, Proprietor</code></td>
+    <td><code>Partner</code><br></br><code>Proprietor</code><br></br><code>Incorporator,Director</code></td>
   </tr>
 </table>
 
