@@ -9,7 +9,7 @@ This document describes the Government of British Columbia’s Person credential
 | Ver.       | Date        | Notes                                               |
 | ---------- | ----------- | --------------------------------------------------- |
 | <b>1.0</b> | 25-Oct-2023 | -                                                   |
-| <b>1.1</b> | 28-Mar-2023 | Corrected Schema ID, updated description of Holders |
+| <b>1.1</b> | 28-Mar-2024 | Corrected Schema ID, updated description of Holders |
 
 ## Credential Overview
 
