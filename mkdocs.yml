@@ -11,6 +11,7 @@ nav:
     - Access Pattern: patterns/access.md
     - Verifier Pattern: patterns/verifier.md
     - Issuer Pattern: patterns/issuer.md
+  - Architecture: architecture.md
   - Solutions:
     - VC-AuthN and SSO: solutions/vc-authn-sso.md
     - Becoming a Verifier: solutions/becomingaverifier.md
