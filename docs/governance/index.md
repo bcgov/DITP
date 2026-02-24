@@ -16,6 +16,10 @@ Welcome to the BC Government's Digital Trust Governance Framework documentation.
 
 - **[Pilots](./pilots/index.md)** - Governance frameworks in pilot testing or development phase
 
+### Service Governance
+
+- **[Service Governance](./service/index.md)** - Governance for shared DITP services (e.g. [WebVH Witness](./service/webvh-witness-governance.md))
+
 ## Network Information
 
 BC Government uses the CANdy Network for some digital trust functionality and adheres to the [CANdy Governance Framework](https://iccs-isac.github.io/Gouvernance-CICAN-ICDTC-Governance/CANdy%20Network/CANdy-Network-Governance-Framework).

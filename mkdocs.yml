@@ -48,6 +48,9 @@ nav:
         - Overview: governance/pilots/bc-petroleum-and-natural-gas-title/index.md
         - Vocabulary: governance/pilots/bc-petroleum-and-natural-gas-title/vocabulary.md
       - Tenure Branch: governance/pilots/tenure-branch/governance.md
+    - Service Governance:
+      - Overview: governance/service/index.md
+      - WebVH Witness: governance/service/webvh-witness-governance.md
     - Credential Template: governance/credential_template.md
   - Integration How-to: acapy-integration-howto.md
   - About Us: about-us.md
