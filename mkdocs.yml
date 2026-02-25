@@ -20,6 +20,8 @@ nav:
       - Becoming an Issuer: solutions/traction-becoming-an-issuer.md
     - OrgBook BC: solutions/orgbook-bc.md
     - Endorser Service: solutions/endorser-service.md
+  - Technical:
+    - WebVH Issuer Onboarding Roadmap: technical/webvh-issuer-onboarding-roadmap.md
   - Governance:
     - Overview: governance/index.md
     - Business Ecosystem:
