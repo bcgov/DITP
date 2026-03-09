@@ -8,7 +8,7 @@ This document describes the Land Title and Survey Authority of British Columbia�
 
 | Ver.      | Date        | Notes                |
 | --------- | ----------- | -------------------- |
-| 1.0       |[Inset date] | Initial Version      |
+| 1.0       |2026-03-09   | Initial Version      |
 
 
 ## 2 Credential Overview
@@ -68,7 +68,7 @@ A Property Owner Credential will be automatically revoked in the following cases
 1. If property ownership changes, such as through sale or transfer. 
 2. If the holder’s verified identity information changes. On confirmation property ownership has not changed, the individual can download a new Credential.
 
-LTSA may revoke a credential if it becomes aware of any real or suspected violation of the Terms of Use of the Property Owner Credential.
+LTSA may revoke a credential if it becomes aware of any real or suspected violation of the [Terms of Use](https://help.ltsa.ca/appendix-e) of the Property Owner Credential.
 
 A Property Owner Credential will be revoked and automatically re-issued in the following cases:
 
@@ -95,13 +95,14 @@ The subject of the Property Owner Credential is the verified registered owner of
 
 ### 6.1 Technical Format
 
-The credential uses the [Hyperledger AnonCreds](https://hyperledger.github.io/anoncreds-spec/) specification and the TBC” schema which has the attributes set out in this section.
+The credential uses the [Hyperledger AnonCreds](https://hyperledger.github.io/anoncreds-spec/) specification and the property-owner schema which has the attributes set out in this section.
 
 ### 6.2 Issuer List
 
 
 | **Environment** | **Issuer Name**                        | **Issuer DID**                                                |  
 |-----------------|----------------------------------------|---------------------------------------------------------------|
+| CANdy Dev       | Land Title and Survey Authority of BC  | KKSXjEHUPVNGYHuof1J3xy                                        |
 | CANdy Test      | Land Title and Survey Authority of BC  | TBC                                                           |   
 | CANdy Prod      | Land Title and Survey Authority of BC  | TBC                                                           |    
 
@@ -113,17 +114,22 @@ The credential uses the [Hyperledger AnonCreds](https://hyperledger.github.io/an
 
 | **Environment** | **Ledger**                             | **Schema ID**                                                 |  
 |-----------------|----------------------------------------|---------------------------------------------------------------|
-| CANdy Test      | [TBC](https://candyscan.idlab.org/tx/CANDY_DEV/domain/35671)  | TBC                                    |
+| CANdy Dev       |  https://candyscan.idlab.org/tx/CANDY_DEV/domain/35671                                      | KKSXjEHUPVNGYHuof1J3xy:2:property-owner:1.1.0                 |
+| CANdy Test      | TBC  | TBC                                    |
 | CANdy Prod      | TBC                                    | TBC                                                           |    
 
 
 
-###6.4 Credential
+### 6.4 Credential
 
 
 | **Environment** | **Ledger**                             | **Credential Definition ID**                                  |  **OCA Bundle**                  |
 |-----------------|----------------------------------------|---------------------------------------------------------------|----------------------------------|
-| CANdy Dev       | [TBC](https://candyscan.idlab.org/tx/CANDY_DEV/domain/35671)  | [Credential transaction ID]                                    |    TBC                              |
+| CANdy Dev       | https://candyscan.idlab.org/tx/CANDY_DEV/domain/35671  | KKSXjEHUPVNGYHuof1J3xy:3:CL:39372:property-owner                                    |    TBC                              |
+| CANdy Test      | TBC  								   | TBC                                    |    TBC                              |
+| CANdy Prod      | TBC                                    | TBC                                    |    TBC                              |
+
+
 
 
 
