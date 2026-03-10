@@ -49,7 +49,7 @@ The Terms of Use for this credential as it relates to End Users can be found her
 
 ### 4.1 Data Source(s)
 
-The BC Land Title Register. LTSA maintains the BC Land Title Register in accordance with requirements in the *Land Title Act. *The register represents current information about registered title ownership.
+The BC Land Title Register. LTSA maintains the BC Land Title Register in accordance with requirements in the *Land Title Act.* The register represents current information about registered title ownership.
 
 #### 4.1.1 Data Updates
 
@@ -128,6 +128,7 @@ The credential uses the [Hyperledger AnonCreds](https://hyperledger.github.io/an
 | CANdy Dev       | https://candyscan.idlab.org/tx/CANDY_DEV/domain/35671  | KKSXjEHUPVNGYHuof1J3xy:3:CL:39372:property-owner                                    |    TBC                              |
 | CANdy Test      | TBC  								   | TBC                                    |    TBC                              |
 | CANdy Prod      | TBC                                    | TBC                                    |    TBC                              |
+
 
 
 
