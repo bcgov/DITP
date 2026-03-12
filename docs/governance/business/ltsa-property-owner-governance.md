@@ -103,8 +103,8 @@ The credential uses the [Hyperledger AnonCreds](https://hyperledger.github.io/an
 | **Environment** | **Issuer Name**                        | **Issuer DID**                                                |  
 |-----------------|----------------------------------------|---------------------------------------------------------------|
 | CANdy Dev       | Land Title and Survey Authority of BC  | KKSXjEHUPVNGYHuof1J3xy                                        |
-| CANdy Test      | Land Title and Survey Authority of BC  | TBC                                                           |   
-| CANdy Prod      | Land Title and Survey Authority of BC  | TBC                                                           |    
+| CANdy Test      | Land Title and Survey Authority of BC  | Tm3dXMR3UsSU4X9Ew913Um                                        |   
+| CANdy Prod      | Land Title and Survey Authority of BC  | JqrH76X8ETpUaNx6TTiP4i                                        |    
 
 
 
@@ -112,11 +112,11 @@ The credential uses the [Hyperledger AnonCreds](https://hyperledger.github.io/an
 ### 6.3 Schema
 
 
-| **Environment** | **Ledger**                             | **Schema ID**                                                 |  
-|-----------------|----------------------------------------|---------------------------------------------------------------|
-| CANdy Dev       |  https://candyscan.idlab.org/tx/CANDY_DEV/domain/35671                                      | KKSXjEHUPVNGYHuof1J3xy:2:property-owner:1.1.0                 |
-| CANdy Test      | TBC  | TBC                                    |
-| CANdy Prod      | TBC                                    | TBC                                                           |    
+| **Environment** | **Ledger**                                             | **Schema ID**                                                 |  
+|-----------------|--------------------------------------------------------|---------------------------------------------------------------|
+| CANdy Dev       |  https://candyscan.idlab.org/tx/CANDY_DEV/domain/39372 | KKSXjEHUPVNGYHuof1J3xy:2:property-owner:1.1.0                 |
+| CANdy Test      | TBC                                                    | Tm3dXMR3UsSU4X9Ew913Um:2:property-owner:1.1.0                 |
+| CANdy Prod      | TBC                                                    | JqrH76X8ETpUaNx6TTiP4i:2:property-owner:1.1.0                 |    
 
 
 
@@ -125,7 +125,7 @@ The credential uses the [Hyperledger AnonCreds](https://hyperledger.github.io/an
 
 | **Environment** | **Ledger**                             | **Credential Definition ID**                                  |  **OCA Bundle**                  |
 |-----------------|----------------------------------------|---------------------------------------------------------------|----------------------------------|
-| CANdy Dev       | https://candyscan.idlab.org/tx/CANDY_DEV/domain/35671  | KKSXjEHUPVNGYHuof1J3xy:3:CL:39372:property-owner                                    |    TBC                              |
+| CANdy Dev       | https://candyscan.idlab.org/tx/CANDY_DEV/domain/39383  | KKSXjEHUPVNGYHuof1J3xy:3:CL:39372:property-owner                                    |    TBC                              |
 | CANdy Test      | TBC  								   | TBC                                    |    TBC                              |
 | CANdy Prod      | TBC                                    | TBC                                    |    TBC                              |
 
