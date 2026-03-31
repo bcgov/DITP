@@ -116,7 +116,7 @@ The credential uses the [Hyperledger AnonCreds](https://hyperledger.github.io/an
 | **Environment** | **Ledger**                                             | **Schema ID**                                                 |  
 |-----------------|--------------------------------------------------------|---------------------------------------------------------------|
 | CANdy Dev       | [Property Owner Credential](https://candyscan.idlab.org/tx/CANDY_DEV/domain/39553) | KKSXjEHUPVNGYHuof1J3xy:2:property-owner:1.0.4                 |
-| CANdy Test      | [Property Owner Credential](https://candyscan.idlab.org/tx/CANDY_TEST/domain/1093) | Tm3dXMR3UsSU4X9Ew913Um:2:property-owner:1.0.4                |
+| CANdy Test      | [Property Owner Credential](https://candyscan.idlab.org/tx/CANDY_TEST/domain/1092) | Tm3dXMR3UsSU4X9Ew913Um:2:property-owner:1.0.4                |
 | CANdy Prod      | TBC                                                    |                 |    
 
 
@@ -126,7 +126,7 @@ The credential uses the [Hyperledger AnonCreds](https://hyperledger.github.io/an
 
 | **Environment** | **Ledger**                             | **Credential Definition ID**                                  |  **OCA Bundle**                  |
 |-----------------|----------------------------------------|---------------------------------------------------------------|----------------------------------|
-| CANdy Dev       | [Property Owner Credential](https://candyscan.idlab.org/tx/CANDY_DEV/domain/39553)  | KKSXjEHUPVNGYHuof1J3xy:3:CL:39553:property-owner | TBC                           |
+| CANdy Dev       | [Property Owner Credential](https://candyscan.idlab.org/tx/CANDY_DEV/domain/39554)  | KKSXjEHUPVNGYHuof1J3xy:3:CL:39553:property-owner | TBC                           |
 | CANdy Test      | [Property Owner Credential](https://candyscan.idlab.org/tx/CANDY_TEST/domain/1093)  | Tm3dXMR3UsSU4X9Ew913Um:3:CL:1092:property-owner  | TBC                           |
 | CANdy Prod      | TBC                                    | TBC                                    |    TBC                              |
 
