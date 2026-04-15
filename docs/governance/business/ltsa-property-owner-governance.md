@@ -8,6 +8,7 @@ This document describes the Land Title and Survey Authority of British Columbia�
 
 | Ver.      | Date        | Notes                |
 | --------- | ----------- | -------------------- |
+|1.1        |2026-03-25   | Updated 5.2, 6.3 and 6.4 |
 | 1.0       |2026-03-09   | Initial Version      |
 
 
@@ -85,7 +86,7 @@ The subject of the Property Owner Credential is the verified registered owner of
 | **Display Name** | **Attribute**   | **Description**                                                |   **Format**   | **Rules & Notes**               | **Examples**          |
 |------------------|-----------------|----------------------------------------------------------------|----------------| --------------------------------|-----------------------|
 | PID              | pid             |   A nine-digit number that uniquely identifies a parcel in the land title register of British Columbia. The registrar assigns PID numbers to parcels for which a title is being entered in the computer register as a registered title.                                                             |     String     | Format: ###-###-### (three groups of three digits separated by dashes)"                          |    012-345-678        | 
-| Property Address | PropertyAddress |  Typically the Civic address of the property or user entered address information at the time a credential is issued                                                              |     String     |        Mandatory                |   Unit 305 – 1234 Main Street, Vancouver, BC                 |
+| Property Address | property_address |  Typically the Civic address of the property or user entered address information at the time a credential is issued                                                              |     String     |        Mandatory                |   Unit 305 – 1234 Main Street, Vancouver, BC                 |
 
 
   
@@ -103,8 +104,8 @@ The credential uses the [Hyperledger AnonCreds](https://hyperledger.github.io/an
 | **Environment** | **Issuer Name**                        | **Issuer DID**                                                |  
 |-----------------|----------------------------------------|---------------------------------------------------------------|
 | CANdy Dev       | Land Title and Survey Authority of BC  | KKSXjEHUPVNGYHuof1J3xy                                        |
-| CANdy Test      | Land Title and Survey Authority of BC  | TBC                                                           |   
-| CANdy Prod      | Land Title and Survey Authority of BC  | TBC                                                           |    
+| CANdy Test      | Land Title and Survey Authority of BC  | Tm3dXMR3UsSU4X9Ew913Um                                        |   
+| CANdy Prod      | Land Title and Survey Authority of BC  | JqrH76X8ETpUaNx6TTiP4i                                        |    
 
 
 
@@ -112,11 +113,11 @@ The credential uses the [Hyperledger AnonCreds](https://hyperledger.github.io/an
 ### 6.3 Schema
 
 
-| **Environment** | **Ledger**                             | **Schema ID**                                                 |  
-|-----------------|----------------------------------------|---------------------------------------------------------------|
-| CANdy Dev       |  https://candyscan.idlab.org/tx/CANDY_DEV/domain/35671                                      | KKSXjEHUPVNGYHuof1J3xy:2:property-owner:1.1.0                 |
-| CANdy Test      | TBC  | TBC                                    |
-| CANdy Prod      | TBC                                    | TBC                                                           |    
+| **Environment** | **Ledger**                                             | **Schema ID**                                                 |  
+|-----------------|--------------------------------------------------------|---------------------------------------------------------------|
+| CANdy Dev       | [Property Owner Credential](https://candyscan.idlab.org/tx/CANDY_DEV/domain/39553) | KKSXjEHUPVNGYHuof1J3xy:2:property-owner:1.0.4                 |
+| CANdy Test      | [Property Owner Credential](https://candyscan.idlab.org/tx/CANDY_TEST/domain/1092) | Tm3dXMR3UsSU4X9Ew913Um:2:property-owner:1.0.4                |
+| CANdy Prod      | TBC                                                    |                 |    
 
 
 
@@ -125,8 +126,8 @@ The credential uses the [Hyperledger AnonCreds](https://hyperledger.github.io/an
 
 | **Environment** | **Ledger**                             | **Credential Definition ID**                                  |  **OCA Bundle**                  |
 |-----------------|----------------------------------------|---------------------------------------------------------------|----------------------------------|
-| CANdy Dev       | https://candyscan.idlab.org/tx/CANDY_DEV/domain/35671  | KKSXjEHUPVNGYHuof1J3xy:3:CL:39372:property-owner                                    |    TBC                              |
-| CANdy Test      | TBC  								   | TBC                                    |    TBC                              |
+| CANdy Dev       | [Property Owner Credential](https://candyscan.idlab.org/tx/CANDY_DEV/domain/39554)  | KKSXjEHUPVNGYHuof1J3xy:3:CL:39553:property-owner | TBC                           |
+| CANdy Test      | [Property Owner Credential](https://candyscan.idlab.org/tx/CANDY_TEST/domain/1093)  | Tm3dXMR3UsSU4X9Ew913Um:3:CL:1092:property-owner  | TBC                           |
 | CANdy Prod      | TBC                                    | TBC                                    |    TBC                              |
 
 

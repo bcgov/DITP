@@ -28,6 +28,7 @@ nav:
       - Overview: governance/business/index.md
       - Digital Business Card: governance/business/digital-business-card-v1.md
       - Rental Property Business Licence: governance/business/rental-property-business-licence.md
+      - Property Owner Credential: governance/business/lts-property-owner-credential.md 
     - Person Ecosystem:
       - Overview: governance/person/index.md
       - Person Credential: governance/person/person-cred-doc.md

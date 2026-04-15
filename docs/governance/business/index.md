@@ -18,17 +18,22 @@ The [BC Digital Business Card](./digital-business-card-v1.md) (DBC) credential i
 ### Rental Property Business Licence
 The [Rental Property Business Licence](./rental-property-business-licence.md) credential is a verifiable credential (VC) issued to individuals or authorized representatives of businesses to prove that they hold a valid City of Vancouver rental business licence.
 
+### Property Owner Credential
+The [Property Owner Credential](./ltsa-property-owner-governance.md) credential is a verifiable credential (VC) issued to individuals registered in BC’s Land Title Register to prove property ownership.
+
 ## Implementation Status
 
 | Credential | Status | Network |
 |------------|---------|----------|
 | Digital Business Card | Production | CANdy Network |
 | Rental Property Business Licence | Production | CANdy Network |
+| Property Owner Credential | Production | CANdy Network |
 
 ## Getting Started
 
 - Review the [Digital Business Card documentation](./digital-business-card-v1.md)
 - Review the [Rental Property Business Licence documentation](./rental-property-business-licence.md)
+- Review the [Property Owner Credential documentation](./ltsa-property-owner-governance.md)
 - Understand the verification and issuance processes
 - Learn about integration options
 
