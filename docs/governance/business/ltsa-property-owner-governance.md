@@ -8,6 +8,7 @@ This document describes the Land Title and Survey Authority of British Columbiaâ
 
 | Ver.      | Date        | Notes                |
 | --------- | ----------- | -------------------- |
+| 1.2       |2026-04-21   | Updated 6.3 and 6.4  |   
 |1.1        |2026-03-25   | Updated 5.2, 6.3 and 6.4 |
 | 1.0       |2026-03-09   | Initial Version      |
 
@@ -115,9 +116,9 @@ The credential uses the [Hyperledger AnonCreds](https://hyperledger.github.io/an
 
 | **Environment** | **Ledger**                                             | **Schema ID**                                                 |  
 |-----------------|--------------------------------------------------------|---------------------------------------------------------------|
-| CANdy Dev       | [Property Owner Credential](https://candyscan.idlab.org/tx/CANDY_DEV/domain/39553) | KKSXjEHUPVNGYHuof1J3xy:2:property-owner:1.0.4                 |
-| CANdy Test      | [Property Owner Credential](https://candyscan.idlab.org/tx/CANDY_TEST/domain/1092) | Tm3dXMR3UsSU4X9Ew913Um:2:property-owner:1.0.4                |
-| CANdy Prod      | TBC                                                    |                 |    
+| CANdy Dev       | [Property Owner Credential](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/39553) | KKSXjEHUPVNGYHuof1J3xy:2:property-owner:1.0.4                 |
+| CANdy Test      | [Property Owner Credential](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_TEST/domain/1092) | Tm3dXMR3UsSU4X9Ew913Um:2:property-owner:1.0.4                |
+| CANdy Prod      | [Property Owner Credential](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_PROD/domain/6668) | JqrH76X8ETpUaNx6TTiP4i:2:property-owner:1.0.4                |    
 
 
 
@@ -126,9 +127,9 @@ The credential uses the [Hyperledger AnonCreds](https://hyperledger.github.io/an
 
 | **Environment** | **Ledger**                             | **Credential Definition ID**                                  |  **OCA Bundle**                  |
 |-----------------|----------------------------------------|---------------------------------------------------------------|----------------------------------|
-| CANdy Dev       | [Property Owner Credential](https://candyscan.idlab.org/tx/CANDY_DEV/domain/39554)  | KKSXjEHUPVNGYHuof1J3xy:3:CL:39553:property-owner | TBC                           |
-| CANdy Test      | [Property Owner Credential](https://candyscan.idlab.org/tx/CANDY_TEST/domain/1093)  | Tm3dXMR3UsSU4X9Ew913Um:3:CL:1092:property-owner  | TBC                           |
-| CANdy Prod      | TBC                                    | TBC                                    |    TBC                              |
+| CANdy Dev       | [Property Owner Credential](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/39554)  | KKSXjEHUPVNGYHuof1J3xy:3:CL:39553:property-owner | TBC                           |
+| CANdy Test      | [Property Owner Credential](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_TEST/domain/1093)  | Tm3dXMR3UsSU4X9Ew913Um:3:CL:1092:property-owner  | TBC                           |
+| CANdy Prod      | [Property Owner Credential](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_PROD/domain/6669)  | JqrH76X8ETpUaNx6TTiP4i:3:CL:6668:property-owner  |    TBC                              |
 
 
 
