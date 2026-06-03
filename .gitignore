@@ -1,0 +1,15 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+*.crt
+*.key
+
+# General
+.env
+
+# MkDocs
+site/
+build/
+
+# Visual Studio Code
+.vscode
+.idea/*
+.vs
