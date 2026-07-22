@@ -21,6 +21,9 @@ The [Rental Property Business Licence](./rental-property-business-licence.md) cr
 ### Property Owner Credential
 The [Property Owner Credential](./ltsa-property-owner-governance.md) credential is a verifiable credential (VC) issued to individuals registered in BC’s Land Title Register to prove property ownership.
 
+### Municipal Services Digital Letter of Authorization (MSDiLOA)
+The [Municipal Services Digital Letter of Authorization](./municipal-services-digital-letter-of-authorization.md) (MSDiLOA) credential is a verifiable credential (VC) issued by a BC municipality to authorize a person to consume municipal services on behalf of another person or business. The first use case covers authorization to apply for a short-term rental business licence.
+
 ## Implementation Status
 
 | Credential | Status | Network |
@@ -28,12 +31,14 @@ The [Property Owner Credential](./ltsa-property-owner-governance.md) credential 
 | Digital Business Card | Production | CANdy Network |
 | Rental Property Business Licence | Production | CANdy Network |
 | Property Owner Credential | Production | CANdy Network |
+| Municipal Services Digital Letter of Authorization (MSDiLOA) | Pilot | CANdy Network |
 
 ## Getting Started
 
 - Review the [Digital Business Card documentation](./digital-business-card-v1.md)
 - Review the [Rental Property Business Licence documentation](./rental-property-business-licence.md)
 - Review the [Property Owner Credential documentation](./ltsa-property-owner-governance.md)
+- Review the [Municipal Services Digital Letter of Authorization documentation](./municipal-services-digital-letter-of-authorization.md)
 - Understand the verification and issuance processes
 - Learn about integration options
 
