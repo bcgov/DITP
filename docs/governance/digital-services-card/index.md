@@ -12,8 +12,8 @@ The Digital Services Card ecosystem provides digital credentials for verifying i
 
 ## Available Credentials
 
-### BC Digital Services Card
-The [BC Digital Services Card](./digital-services-card.md) serves as a foundational identity credential that:
+### Digital Services Card
+The [Digital Services Card](./digital-services-card.md) serves as a foundational identity credential that:
 
 - Verifies individual identity attributes
 - Enables secure access to government services
@@ -24,7 +24,7 @@ The [BC Digital Services Card](./digital-services-card.md) serves as a foundatio
 
 | Credential | Status | Network |
 |------------|---------|----------|
-| BC Digital Services Card | Production | CANdy Network |
+| Digital Services Card | Production | CANdy Network |
 
 ## Getting Started
 
@@ -34,5 +34,5 @@ The [BC Digital Services Card](./digital-services-card.md) serves as a foundatio
 
 ## Additional Resources
 
-- [BC Services Card app Documentation](https://www2.gov.bc.ca/gov/content/governments/government-id/bc-wallet)
-- [Digital Identity Program](https://digital.gov.bc.ca/digital-trust/products/bc-wallet)
+- [BC Services Card app Documentation](https://id.gov.bc.ca/)
+- [Digital Identity Program](https://id.gov.bc.ca/)

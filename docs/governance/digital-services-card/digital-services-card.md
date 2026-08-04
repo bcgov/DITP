@@ -10,76 +10,27 @@ This document describes the Government of British Columbia’s Digital Services 
 | ---------- | ----------- | --------------------------------------------------- |
 | <b>1.0</b> | 25-Oct-2023 | -                                                   |
 | <b>1.1</b> | 28-Mar-2024 | Corrected Schema ID, updated description of Holders |
-| <b>1.2</b> | 23-Jul-2026 | Renamed credential to Digital Services Card; updated wallet app to BC Services Card app; clarified App Attestation is optional. **No change to the Person schema, schema ID, or credential definition. No revocation or re-issuance of existing credentials.** |
+| <b>1.2</b> | 17-Aug-2026 | Renamed credential to Digital Services Card; updated wallet app to BC Services Card app; clarified App Attestation is optional. **No change to the Person schema, schema ID, or credential definition. No revocation or re-issuance of existing credentials.** |
 
 ## Credential Overview
 
-The Digital Services Card is a verifiable credential (VC) issued to individuals to enable them to prove their identity and to digitally provide key personal information – name, data of birth, photo, address – to other parties (“verifiers”). The Digital Services Card is intended to be used as a source of trusted identity information in a wide range of contexts, either alone or in conjunction with other credentials. The Digital Services Card currently is only issued to the BC Services Card app, a mobile application published by the Digital Identity & Trust Program (DITP) within the Office of the Chief Information Officer (OCIO) of the BC
+The Digital Services Card is a verifiable credential (VC) issued to individuals to enable them to prove their identity and to digitally provide key personal information – name, date of birth, photo, address – to other parties (“verifiers”). The Digital Services Card is intended to be used as a source of trusted identity information in a wide range of contexts, either alone or in conjunction with other credentials. The Digital Services Card currently is only issued to the BC Services Card app, a mobile application published by the Digital Identity & Trust Program (DITP) within the Office of the Chief Information Officer (OCIO) of the BC
 Ministry of Citizens’ Services.
 
-<table>
-  <tr>
-    <th>Credential</th>
-    <td>Digital Services Card</td>
-  </tr>
-  <tr>
-    <th>Issuer</th>
-    <td>
-        Service BC, through its Provincial Identity Information Management (IDIM) Program, of the BC Government of British Columbia
-    </td>
-  </tr>
-  <tr>
-    <th>Issuer DID</th>
-    <td>RGjWbW1eycP7FrMf4QJvX8</td>
-  </tr>
-  <tr>
-    <th>Schema</th>
-        <td>
-            Person, version 1.0
-            <ul><li>Schema ID: RGjWbW1eycP7FrMf4QJvX8:2:Person:1.0</li><li>Documentation: <sup>1</sup></li></ul>
-        </td>
-  </tr>
-  <tr>
-    <th>Credential</th>
-        <td>Person, version 1.0<ul><li>Cred Def ID: RGjWbW1eycP7FrMf4QJvX8:3:CL:13:Person</li></ul></td>
-  </tr>
-  <tr>
-    <th>Data Registry</th>
-    <td> 
-        CANdy Ledger
-        <ul>
-            <li>Ledger <a href="https://candyscan.idlab.org/home/CANDY_PROD">browser</a></li>
-            <li>Ledger <a href="https://github.com/ICCS-ISAC/dtrust-reconu/blob/main/CANdy/prod/pool_transactions_genesis">Pool Genesis File</a></li>
-        </ul>    
-    </td>
-  </tr>
-  <tr>
-    <th>Holders</th>
-    <td>The Digital Services Card is currently only issued to individuals who have had their identity verified by the BC Services Card Program, have a valid BC Services Card, have authenticated with the BC Services Card app, and are at least 19 years of age.</td>
-  </tr>
-<tr>
-    <th>Data Source</th>
-    <td>
-        The Digital Services Card data comes from the BC Services Card digital identity. More specifically:
-        <ul>
-            <li>The individual’s name is from their Canadian foundational identity document (e.g., birth certificate, immigration document) unless taken from marriage or name change documents</li>
-            <li>The individual’s date of birth is from the subject’s Canadian foundational identity document</li>
-            <li>Address values are self-asserted and unverified</li>
-            <li>Picture is taken by the BC Services Card program partner, the Insurance Corporation of BC (ICBC), at the time the individual presents their foundational identity documents</li>
-        </ul>
-    </td>
-</tr>
-<tr>
-    <th>Revocation</th>
-    <td>A Digital Services Card will be revoked – and will often be re-issued – due to both automated events (e.g., data updates) and manual events. These are described in greater detail in the Revocation section, below.</td>
-</tr>
-<tr>
-    <th>Assurance</th>
-    <td>The Digital Services Card is issued to individuals who have been identified at a High (3) Identification Level as defined by the BC Office of the CIO <a href="https://www2.gov.bc.ca/assets/gov/government-services-for-government-and-broader-public-sector/information-technology-services/standards-files/identity_assurance_standard.pdf">Identity Assurance Standard</a>.</td>
-</tr>
-</table>
+| Field | Value |
+| --- | --- |
+| Credential | Digital Services Card |
+| Issuer | Service BC, through its Provincial Identity Information Management (IDIM) Program, of the BC Government of British Columbia |
+| Issuer DID | `RGjWbW1eycP7FrMf4QJvX8` |
+| Schema | Person, version 1.0<br>- Schema ID: `RGjWbW1eycP7FrMf4QJvX8:2:Person:1.0`<br>- Documentation: <sup>1</sup> |
+| Credential | Person, version 1.0<br>- Cred Def ID: `RGjWbW1eycP7FrMf4QJvX8:3:CL:13:Person` |
+| Data Registry | CANdy Ledger<br>- Ledger [browser](https://candyscan.idlab.org/home/CANDY_PROD)<br>- Ledger [Pool Genesis File](https://github.com/ICCS-ISAC/dtrust-reconu/blob/main/CANdy/prod/pool_transactions_genesis) |
+| Holders | The Digital Services Card is currently only issued to individuals who have had their identity verified by the BC Services Card Program, have a valid BC Services Card, have authenticated with the BC Services Card app, and are at least 19 years of age. |
+| Data Source | The Digital Services Card data comes from the BC Services Card digital identity. More specifically:<br>- The individual’s name is from their Canadian foundational identity document (e.g., birth certificate, immigration document) unless taken from marriage or name change documents<br>- The individual’s date of birth is from the subject’s Canadian foundational identity document<br>- Address values are self-asserted and unverified<br>- Picture is taken by the BC Services Card program partner, the Insurance Corporation of BC (ICBC), at the time the individual presents their foundational identity documents |
+| Revocation | A Digital Services Card will be revoked – and will often be re-issued – due to both automated events (e.g., data updates) and manual events. These are described in greater detail in the Revocation section, below. |
+| Assurance | The Digital Services Card is issued to individuals who have been identified at a High (3) Identification Level as defined by the BC Office of the CIO [Identity Assurance Standard](https://www2.gov.bc.ca/assets/gov/government/services-for-government-and-broader-public-sector/information-technology-services/standards-files/identity_assurance_standard.pdf). |
 
-<sup>1</sup>The Person Schema documentation will be published and maintained by the CANdy Network through a forthcoming agreement between the provinces of BC, Ontario, and Quebec.
+<sup>1</sup>The Person Schema documentation is published and maintained by the CANdy Network through an agreement between the provinces of BC, Ontario, and Quebec.
 
 ### Attribute Summary
 
@@ -115,7 +66,7 @@ When a Digital Services Card is issued, its data reflects that of the individual
 
 The BC Services Card digital identity record may be updated by the individual in two ways:
 
-- An individual wishing to change their name, correct their data of birth, or update their photo must do so in-person and must present documents supporting their identity and the requested change
+- An individual wishing to change their name, correct their date of birth, or update their photo must do so in-person and must present documents supporting their identity and the requested change
 - Change of address may be done online, with authentication based on shared secrets about the individual
 
 The digital identity record may also be updated by the BC Services Card program, such as when a card expires or when the individual has been reported deceased by the BC Vital Statistics Agency.
@@ -126,14 +77,14 @@ The Digital Services Card is based on the BC Services Card digital identity, whi
 
 #### BC Services Card
 
-By design, the BC Services Card digital identity meets the BC Office of the CIO [Identity Assurance Standard](https://www2.gov.bc.ca/assets/gov/government-services-for-government-and-broader-public-sector/information-technology-services/standards-files/identity_assurance_standard.pdf) requirements for a High (3) Identity Assurance Level. It meets this through the combination of its identity proofing process, the security of the issued credential, and the security of its two-factor authentication. <br></br>
+By design, the BC Services Card digital identity meets the BC Office of the CIO [Identity Assurance Standard](https://www2.gov.bc.ca/assets/gov/government/services-for-government-and-broader-public-sector/information-technology-services/standards-files/identity_assurance_standard.pdf) requirements for a High (3) Identity Assurance Level. It meets this through the combination of its identity proofing process, the security of the issued credential, and the security of its two-factor authentication. <br></br>
 The BC Services Card digital identity has been assessed twice, in 2019 and 2021, by the Treasury Board of Canada Secretariat (TBS) against the Public Sector Profile of the Pan-Canadian Trust Framework (PSP- PCTF). In both cases, it was assessed as being a Trusted Digital Identity Level 3 (high), as defined in Appendix A of the TBS [Directive on Identity Management](https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=16577).
 
 #### Digital Services Card
 
 The Digital Services Card is based on the BC Services Card digital identity and is securely issued using BC Services Card two-factor authentication into the BC Services Card app. Of note:
 
-- The Digital Services Card is issued to individuals who have been identified at a High (3) Identification Level as defined by the BC Office of the CIO [Identity Assurance Standard](https://www2.gov.bc.ca/assets/gov/government-services-for-government-and-broader-public-sector/information-technology-services/standards-files/identity_assurance_standard.pdf). It is based on the identity record of the BC Services Card and requires the individual to prove who they are using a BC Services Card authenticator, ensuring a Digital Services Card is issued to the correct individual’s wallet
+- The Digital Services Card is issued to individuals who have been identified at a High (3) Identification Level as defined by the BC Office of the CIO [Identity Assurance Standard](https://www2.gov.bc.ca/assets/gov/government/services-for-government-and-broader-public-sector/information-technology-services/standards-files/identity_assurance_standard.pdf). It is based on the identity record of the BC Services Card and requires the individual to prove who they are using a BC Services Card authenticator, ensuring a Digital Services Card is issued to the correct individual’s wallet
 - The Digital Services Card will only be issued to the BC Services Card app, which requires authentication to use, protecting use of the Digital Services Card by anyone other than the legitimate holder
 
 > **Note:** App Attestation is optional in the BC Services Card app. When App Attestation is performed, the Issuer verifies the wallet is the official BC Services Card app before issuing the credential. When App Attestation is not performed, the credential may be issued to a non-official or compatible wallet. Existing credentials issued under either flow remain valid; this is a documentation update, not a policy change.
@@ -175,254 +126,117 @@ The subject of a Digital Services Card is the individual to whom it was issued, 
 
 This section indicates which Person Schema attributes are used by BC, whether there are any BC-specific implementation notes, and some exceptions in the attribute data.
 
-<table>
-  <tr>
-    <th>Notes</th>
-    <td>
-        <ul><li>Attribute data will always be upper case (e.g., "SMITH" not "Smith")</li><li>Allowable Characters: The only characters allowed are the letters A through Z, digits 0 through 9, and the following "special characters": hyphen, apostrophe, period, and space</li><li>Characters are encoded using UTF-8</li></ul>
-    </td>
-  </tr>
-</table>
+**Notes:**
+
+- Attribute data will always be upper case (e.g., "SMITH" not "Smith")
+- Allowable Characters: The only characters allowed are the letters A through Z, digits 0 through 9, and the following "special characters": hyphen, apostrophe, period, and space
+- Characters are encoded using UTF-8
 
 #### Name Attributes
 
 The name attributes of a Digital Services Card will – with some exceptions – reflect the name on the subject’s Canadian foundational identity documents.
 
-<table>
-  <tr>
-    <th>Notes</th>
-    <td>
-        <ul>
-            <li>If an individual's name has a special character (e.g., Á, Ê, Ç) or a number in their name on their foundational identity document, it will not be reflected in the name attributes of the Digital Services Card</li>
-            <li>The name in the Digital Services Card will normally reflect the name on foundational identity documents or name linking documents (e.g. marriage certificates), but those documents may not reflect the individual’s name. For example</li>
-            <ul>
-                <li>Some names have special characters that the BC Vital Statistics can print on a birth certificate but does not pass on to the BC Services Card Program computer system</li>
-                <li>Immigration, Refugees and Citizenship Canada (IRCC) will truncate an individual’s name (the combined given names and family name) at 45 characters on IIRC foundational identity documents (e.g., permanent resident card and the student, work, visitor, and temporary-resident permits)</li>
-            </ul>
-            <li>An individual may use the last name of their spouse without getting a legal name change. In these cases, their Digital Services Card <i>should</i> reflect – via their BC Services Card record – their foundational identity documents, as individuals are required by law to update their BC Services Card when they change their name by marriage or otherwise. Individuals who do this may continue to use their original name in other contexts, and so their Digital Services Card may not be consistent with their other identity documents or credentials bearing their name</li>
-        </ul>
-    </td>
-  </tr>
-</table>
+**Notes:**
+
+- If an individual's name has a special character (e.g., Á, Ê, Ç) or a number in their name on their foundational identity document, it will not be reflected in the name attributes of the Digital Services Card
+- The name in the Digital Services Card will normally reflect the name on foundational identity documents or name linking documents (e.g. marriage certificates), but those documents may not reflect the individual’s name. For example
+  - Some names have special characters that the BC Vital Statistics can print on a birth certificate but does not pass on to the BC Services Card Program computer system
+  - Immigration, Refugees and Citizenship Canada (IRCC) will truncate an individual’s name (the combined given names and family name) at 45 characters on IIRC foundational identity documents (e.g., permanent resident card and the student, work, visitor, and temporary-resident permits)
+- An individual may use the last name of their spouse without getting a legal name change. In these cases, their Digital Services Card <i>should</i> reflect – via their BC Services Card record – their foundational identity documents, as individuals are required by law to update their BC Services Card when they change their name by marriage or otherwise. Individuals who do this may continue to use their original name in other contexts, and so their Digital Services Card may not be consistent with their other identity documents or credentials bearing their name
 
 ##### Given Names
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>given_names</code></td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td>
-      <ul>
-        <li>Maximum 47 characters</li>
-        <li>Consists of three names, a first name and up to two middle names, delimited by spaces</li>
-        <ul><li>Each name may be up to 15 characters long</li></ul>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-      <ul>
-        <li>May be blank</li>
-        <li>First and middle names over 15 characters are truncated</li>
-        <li>If the individual has a mononym, this attribute will _normally_ have no value and the mononym will appear in the family_name attribute</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-      <ul>
-        <li>Names can start with any of the Allowable Characters</li>
-        <li>First Names and Middle Names with spaces or punctuation (e.g., “JO ANNE”, “JIAN U”, “D’ARCY”) will have the spaces and punctuation removed (e.g., “JOANNE”, “JIANU”, “DARCY”)</li>
-        <li>To work around the removal of spaces, described above, a first name with a space (e.g. “JO ANNE”) may be entered as a first name and a middle name (e.g., “JO ANNE” is entered as “JO” and “ANNE”). This will appear as “JO ANNE” in the given_names attribute, which is indistinguishable from an individual whose first name is “JO” and whose middle name is “ANNE”. Similarly, a middle name with a space (e.g., “MARY LOU”) may be entered as two middle names (e.g., “MARY” and “LOU”). As such, spaces in the given_names attribute are not a reliable delimiter between names</li>
-        <li>Some legacy records have only an initial for a middle name (e.g., "J" for "James")</li>
-        <li>A mononym may be duplicated in this attribute as well as family_name</li>
-        <li>If the individual has a mononym containing a space, the first part of the mononym may be recorded in the given_names attribute and the second part in the family_name attribute</li>
-      </ul>
-    </td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `given_names` |
+| **Format** | - Maximum 47 characters<br>- Consists of three names, a first name and up to two middle names, delimited by spaces<br>  - Each name may be up to 15 characters long |
+| **Rules** | - May be blank<br>- First and middle names over 15 characters are truncated<br>- If the individual has a mononym, this attribute will _normally_ have no value and the mononym will appear in the family_name attribute |
+| **Notes** | - Names can start with any of the Allowable Characters<br>- First Names and Middle Names with spaces or punctuation (e.g., “JO ANNE”, “JIAN U”, “D’ARCY”) will have the spaces and punctuation removed (e.g., “JOANNE”, “JIANU”, “DARCY”)<br>- To work around the removal of spaces, described above, a first name with a space (e.g. “JO ANNE”) may be entered as a first name and a middle name (e.g., “JO ANNE” is entered as “JO” and “ANNE”). This will appear as “JO ANNE” in the given_names attribute, which is indistinguishable from an individual whose first name is “JO” and whose middle name is “ANNE”. Similarly, a middle name with a space (e.g., “MARY LOU”) may be entered as two middle names (e.g., “MARY” and “LOU”). As such, spaces in the given_names attribute are not a reliable delimiter between names<br>- Some legacy records have only an initial for a middle name (e.g., "J" for "James")<br>- A mononym may be duplicated in this attribute as well as family_name<br>- If the individual has a mononym containing a space, the first part of the mononym may be recorded in the given_names attribute and the second part in the family_name attribute |
 
 ##### Family Name
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>family_name</code></td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td><ul><li>Maximum 35 characters</li></ul></td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-      <ul><li>Never blank</li><li>Family names over 35 characters are truncated</li></ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-      <ul><li>A family name with spaces or punctuation (e.g., “St. John”, “O’Brian”, “van Cleef”, “Scott-Bigsby”) will have the spaces and punctuation included if the individual has a photo BC Services Card but removed if the individual has a non-photo BC Services Card</li><li>If the individual has a mononym containing a space, the first part of the mononym may be recorded in the given_names attribute and the second part in the family_name attribute</li></ul>
-    </td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `family_name` |
+| **Format** | - Maximum 35 characters |
+| **Rules** | - Never blank<br>- Family names over 35 characters are truncated |
+| **Notes** | - A family name with spaces or punctuation (e.g., “St. John”, “O’Brian”, “van Cleef”, “Scott-Bigsby”) will have the spaces and punctuation included if the individual has a photo BC Services Card but removed if the individual has a non-photo BC Services Card<br>- If the individual has a mononym containing a space, the first part of the mononym may be recorded in the given_names attribute and the second part in the family_name attribute |
 
 ### Date of Birth Attributes
 
 ##### Date of Birth
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>birthdate_dateint</code></td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td><ul><li>Never blank</li></ul></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `birthdate_dateint` |
+| **Rules** | - Never blank |
 
 ### Address Attributes
 
-<table>
-  <tr>
-    <th>Notes</th>
-    <td>
-      <ul>
-        <li>All address attributes in a Digital Services Card are for a single address</li>
-        <li>The address is the address provided by the individual or, for children, their guardian</li>
-        <li>The address is usually in BC, but may be in another part of Canada or in another country</li>
-        <li>The address in a Digital Services Card is usually – but not always – both the residential and the mailing address of the subject</li>
-        <ul>
-          <li>The address in the Digital Services Card is the address provided by the individual (or, for a child, their guardian) when they first apply for MSP, when they renew their BC Services Card (generally required every 5 years), or when the individual notifies  a BC Services Card program partner of a change to their address or updates their address through <a href="https://www.addresschange.gov.bc.ca">AddressChangeBC</a> online.</li>
-          <li>Some individuals may provide another person’s address to HIBC or ICBC, e.g., young adults moving for university may continue to use their parent’s address</li>
-          <li>Some individuals may provide a Post Office Box</li>
-          <li>Individuals are legally required to notify HIBC and ICBC within two weeks of a change of address, but not everyone complies</li>
-        </ul>
-      </ul>
-</td>
+**Notes:**
 
-  </tr>
-</table>
+- All address attributes in a Digital Services Card are for a single address
+- The address is the address provided by the individual or, for children, their guardian
+- The address is usually in BC, but may be in another part of Canada or in another country
+- The address in a Digital Services Card is usually – but not always – both the residential and the mailing address of the subject
+  - The address in the Digital Services Card is the address provided by the individual (or, for a child, their guardian) when they first apply for MSP, when they renew their BC Services Card (generally required every 5 years), or when the individual notifies  a BC Services Card program partner of a change to their address or updates their address through [AddressChangeBC](https://www.addresschange.gov.bc.ca) online.
+  - Some individuals may provide another person’s address to HIBC or ICBC, e.g., young adults moving for university may continue to use their parent’s address
+  - Some individuals may provide a Post Office Box
+  - Individuals are legally required to notify HIBC and ICBC within two weeks of a change of address, but not everyone complies
 
 ##### Street Address
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>street_address</code></td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td><ul><li>Maximum 66 characters, comprised of up to two rows of up to 32 characters each, with a carriage return/line feed pair ("\r\n") delimiting the rows</li></ul></td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td><ul><li>May be blank</li></ul></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `street_address` |
+| **Format** | - Maximum 66 characters, comprised of up to two rows of up to 32 characters each, with a carriage return/line feed pair ("\r\n") delimiting the rows |
+| **Rules** | - May be blank |
 
 #### Locality
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>locality</code></td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td><ul><li>May be blank</li></ul></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `locality` |
+| **Rules** | - May be blank |
 
 #### Region
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>region</code></td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td><ul><li>For Canadian addresses, this will be a two-character Province or Territory code</li><li>For U.S. addresses, this will be two-character State code</li><li>For other addresses, the format is not defined</li></ul></td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td><ul><li>May be blank</li></ul></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `region` |
+| **Format** | - For Canadian addresses, this will be a two-character Province or Territory code<br>- For U.S. addresses, this will be two-character State code<br>- For other addresses, the format is not defined |
+| **Rules** | - May be blank |
 
 #### Postal Code
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>postal_code</code></td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td><ul><li>Maximum 10 characters</li><li>Canadian postal codes will have a space, e.g., "V8V 3P6"</li></ul></td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td><ul><li>May be blank</li></ul></td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td><ul><li>This may be a US ZIP Code or a postal code of another country</li></ul></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `postal_code` |
+| **Format** | - Maximum 10 characters<br>- Canadian postal codes will have a space, e.g., "V8V 3P6" |
+| **Rules** | - May be blank |
+| **Notes** | - This may be a US ZIP Code or a postal code of another country |
 
 #### Country
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>country</code></td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td><ul><li>May be blank</li></ul></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `country` |
+| **Rules** | - May be blank |
 
 ### Other Attributes
 
 #### Picture
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>picture</code></td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td><ul><li>The picture is a 230 by 300 pixel portrait, in JPG format, in base 64 encoding in a Data URL</li></ul></td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td><ul><li>May be blank</li><li>Starting in Fall 2023, credentials will be issued with a picture if there is one on the individual’s current BC Services Card</li></ul></td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td><ul><li>During the initial pilot program, the Digital Services Card was issued without a picture. Those credentials are to eventually be revoked and replaced with ones that include a picture</li><li>The image is a passport-style picture of the individual taken during the identity proofing event</li></ul></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `picture` |
+| **Format** | - The picture is a 230 by 300 pixel portrait, in JPG format, in base 64 encoding in a Data URL |
+| **Rules** | - May be blank<br>- Credentials are issued with a picture if there is one on the individual’s current BC Services Card |
+| **Notes** | - During the initial pilot program, the Digital Services Card was issued without a picture. Those credentials are to eventually be revoked and replaced with ones that include a picture<br>- The image is a passport-style picture of the individual taken during the identity proofing event |
 
 #### Expiry Date
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>expiry_date_dateint</code></td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td><ul><li> Always blank – BC <u><i>does not</i></u> include an expiry date in its Digital Services Card</li></ul></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `expiry_date_dateint` |
+| **Rules** | - Always blank – BC <u><i>does not</i></u> include an expiry date in its Digital Services Card |
