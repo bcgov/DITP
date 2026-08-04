@@ -32,9 +32,9 @@ nav:
           - Rental Property Business Licence: governance/business/rental-property-business-licence.md
           - Property Owner Credential: governance/business/ltsa-property-owner-governance.md
           - Municipal Services Digital Letter of Authorization: governance/business/municipal-services-digital-letter-of-authorization.md
-      - Person Ecosystem:
-          - Overview: governance/person/index.md
-          - Person Credential: governance/person/person-cred-doc.md
+      - Digital Services Card Ecosystem:
+          - Overview: governance/digital-services-card/index.md
+          - Digital Services Card: governance/digital-services-card/digital-services-card.md
       - Employment Ecosystem:
           - Overview: governance/employment/index.md
           - Contractor Credential: governance/employment/contractor-credential/governance.md
