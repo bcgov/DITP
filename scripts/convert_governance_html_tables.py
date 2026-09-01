@@ -88,12 +88,15 @@ def table_to_markdown(table_html: str) -> str:
     if not rows:
         return table_html
 
-    lines = ["| | |", "| --- | --- |"]
-    for key, value in rows:
-        label = f"**{key}**" if not key.startswith("**") else key
-        value = value.replace("\n", "<br>")
-        lines.append(f"| {label} | {value} |")
+    lines = [f"- **{normalize_label(key)}**: {value}" for key, value in rows]
     return "\n".join(lines)
+
+
+def normalize_label(label: str) -> str:
+    label = label.strip()
+    if label.startswith("**") and label.endswith("**"):
+        label = label[2:-2]
+    return label.rstrip(":")
 
 
 def convert_tables(content: str) -> str:
@@ -119,7 +122,6 @@ def process_file(path: Path) -> None:
     original = path.read_text(encoding="utf-8")
     updated = original
     updated = convert_tables(updated)
-    updated = fix_overview_tables(updated)
     updated = fix_misc(updated)
     if updated != original:
         path.write_text(updated, encoding="utf-8", newline="\n")
