@@ -220,7 +220,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 | **Description** | A concatenated summary of the business licence number and expiry date. |
 | **Source** | Municipal Business Licence System of Record (derived from `licence_number` and `licence_expiry_dateint`). |
 | **Data Type** | String |
-| **Examples** | `BL-123456 | Expires 20250907`<br> `LTR-987654 | Expires 20241231` |
+| **Examples** | `BL-123456 \| Expires 20250907`<br>`LTR-987654 \| Expires 20241231` |
 
 #### 4.3.2 Attributes about the Business / Licence Holder
 
@@ -518,4 +518,4 @@ The Governing Authority of this Credential document attests that the following i
 |---|---|---|---|
 |CANdy Production|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_PROD/domain/4575)|<code>R12pguaP3VF2WiE6vAsiPF:3:CL:921:Rental Property Business Licence</code>|[prod-property-rental-business-licence](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/prod-property-rental-business-licence)|
 |CANdy Test|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_TEST/domain/922)|<code>ARK5s3QZtjL5X65mLoubdk:3:CL:921:Rental Property Business Licence</code>|[test-property-rental-business-licence](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/test-property-rental-business-licence)|
-|CANdy Dev|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/38196)|<code>YWnESLB4SH275SMNvaJJ1L:3:CL:38195:Rental Property Business </code>|[dev-property-rental-business-licence](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/dev-property-rental-business-licence)|
+|CANdy Dev|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/38196)|<code>YWnESLB4SH275SMNvaJJ1L:3:CL:38195:Rental Property Business Licence</code>|[dev-property-rental-business-licence](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/dev-property-rental-business-licence)|
