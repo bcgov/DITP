@@ -19,9 +19,11 @@ The Rental Property Business Licence credential is a verifiable credential (VC) 
 
 The credential is intended to be used in a wide range of contexts, both alone or alongside other credentials (e.g., BC Person Credential, Digital Business Card), as a trusted source of business licence information for verifiers such as property listing platforms, municipal inspectors, or other government agencies.
 
-- **Credential**: Rental Property Business Licence
-- **Schema**: Rental Property Business Licence
-- **Issuer**: City of Vancouver (Business Licenses Division) <br> [https://vancouver.ca/](https://vancouver.ca/)
+| | |
+| --- | --- |
+| **Credential** | Rental Property Business Licence |
+| **Schema** | Rental Property Business Licence |
+| **Issuer** | City of Vancouver (Business Licenses Division) <br> [https://vancouver.ca/](https://vancouver.ca/) |
 
 ### 2.1 Attribute Summary
 
@@ -142,251 +144,309 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Business Licence Type (001)*
 
-- **Attribute**: `business_licence_type`
-- **Description**: The category of licence issued.
-- **Source**: Municipal Business Licence System of Record.
-- **Data Type**: String
-- **Examples**: `Short-Term Rental`<br>`Long-Term Rental`
+| | |
+| --- | --- |
+| **Attribute** | `business_licence_type` |
+| **Description** | The category of licence issued. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `Short-Term Rental`<br>`Long-Term Rental` |
 
 *Business Sub-Type (002)*
 
-- **Attribute**: `business_sub_type`
-- **Description**: The sub type of business licence being issued.
-- **Source**: Municipal Business Licence System of Record.
-- **Data Type**: String
-- **Examples**: `Multiple Dwelling - 99 Year Lease`<br>`Non-profit Housing`
+| | |
+| --- | --- |
+| **Attribute** | `business_sub_type` |
+| **Description** | The sub type of business licence being issued. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `Multiple Dwelling - 99 Year Lease`<br>`Non-profit Housing` |
 
 *Licence Number (004)*
 
-- **Attribute**: `licence_number`
-- **Description**: The issued licence number of the business licence.
-- **Source**: Municipal Business Licence System of Record.
-- **Data Type**: String
-- **Examples**: `24-123456`
+| | |
+| --- | --- |
+| **Attribute** | `licence_number` |
+| **Description** | The issued licence number of the business licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `24-123456` |
 
 *Licence Revision Number (005)*
 
-- **Attribute**: `licence_revision_number`
-- **Description**: The revision number of the issued business licence.
-- **Source**: Municipal Business Licence System of Record.
-- **Data Type**: String
-- **Examples**: `1`<br>`2`
+| | |
+| --- | --- |
+| **Attribute** | `licence_revision_number` |
+| **Description** | The revision number of the issued business licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `1`<br>`2` |
 
 *Issue Date (008)*
 
-- **Attribute**: `licence_issued_dateint`
-- **Description**: The issued date of the business licence.
-- **Source**: Municipal Business Licence System of Record.
-- **Data Type**: Integer (YYYYMMDD)
-- **Examples**: `20250115`
+| | |
+| --- | --- |
+| **Attribute** | `licence_issued_dateint` |
+| **Description** | The issued date of the business licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | Integer (YYYYMMDD) |
+| **Examples** | `20250115` |
 
 *Licence Start Date (009)*
 
-- **Attribute**: `licence_valid_from_dateint`
-- **Description**: The date on which the business is permitted to begin operating under the issued licence.
-- **Source**: Municipal Business Licence System of Record.
-- **Data Type**: Integer (YYYYMMDD)
-- **Examples**: `20250115`<br>`20240901`
-
+| | |
+| --- | --- |
+| **Attribute** | `licence_valid_from_dateint` |
+| **Description** | The date on which the business is permitted to begin operating under the issued licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | Integer (YYYYMMDD) |
+| **Examples** | `20250115`<br>`20240901` |
 
 *Expiry Date (010)*
 
-- **Attribute**: `licence_expiry_dateint`
-- **Description**: The expiry date of the business licence.
-- **Source**: Municipal Business Licence System of Record.
-- **Data Type**: Integer (YYYYMMDD)
-- **Examples**: `20251231`
+| | |
+| --- | --- |
+| **Attribute** | `licence_expiry_dateint` |
+| **Description** | The expiry date of the business licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | Integer (YYYYMMDD) |
+| **Examples** | `20251231` |
 
 *Licence Summary (033)*
 
-- **Attribute**: `licence_summary`
-- **Description**: A concatenated summary of the business licence number and expiry date.
-- **Source**: Municipal Business Licence System of Record (derived from `licence_number` and `licence_expiry_dateint`).
-- **Data Type**: String
-- **Examples**: `BL-123456 | Expires 20250907`<br> `LTR-987654 | Expires 20241231`
-
+| | |
+| --- | --- |
+| **Attribute** | `licence_summary` |
+| **Description** | A concatenated summary of the business licence number and expiry date. |
+| **Source** | Municipal Business Licence System of Record (derived from `licence_number` and `licence_expiry_dateint`). |
+| **Data Type** | String |
+| **Examples** | `BL-123456 | Expires 20250907`<br> `LTR-987654 | Expires 20241231` |
 
 #### 4.3.2 Attributes about the Business / Licence Holder
 
 *Business / Trade Name (003)*
 
-- **Attribute**: `business_trade_name`
-- **Description**: The business name of the operator of the business licence.
-- **Source**: Municipal Business Licence System of Record (as reported by the applicant).
-- **Data Type**: String
-- **Examples**: `West End Suites`<br>`Maple Rentals`
+| | |
+| --- | --- |
+| **Attribute** | `business_trade_name` |
+| **Description** | The business name of the operator of the business licence. |
+| **Source** | Municipal Business Licence System of Record (as reported by the applicant). |
+| **Data Type** | String |
+| **Examples** | `West End Suites`<br>`Maple Rentals` |
 
 *Licence Holder First Name (006)*
 
-- **Attribute**: `licence_holder_given_name`
-- **Description**: Licence holder given name of the business licence.
-- **Source**: Verified via BC Person Credential and government-issued photo ID.
-- **Data Type**: String
-- **Examples**: `Jane`
+| | |
+| --- | --- |
+| **Attribute** | `licence_holder_given_name` |
+| **Description** | Licence holder given name of the business licence. |
+| **Source** | Verified via BC Person Credential and government-issued photo ID. |
+| **Data Type** | String |
+| **Examples** | `Jane` |
 
 *Licence Holder Last Name (007)*
 
-- **Attribute**: `licence_holder_family_name`
-- **Description**: Licence holder family name of the business licence.
-- **Source**: Verified via BC Person Credential and government-issued photo ID.
-- **Data Type**: String
-- **Examples**: `Doe`
+| | |
+| --- | --- |
+| **Attribute** | `licence_holder_family_name` |
+| **Description** | Licence holder family name of the business licence. |
+| **Source** | Verified via BC Person Credential and government-issued photo ID. |
+| **Data Type** | String |
+| **Examples** | `Doe` |
 
 #### 4.3.3 Attributes about the Location
 
 *Unit (011)*
 
-- **Attribute**: `unit`
-- **Description**: The unit number of the business licence.
-- **Source**: Municipal Business Licence System of Record (provided by the applicant and verified against property records).
-- **Data Type**: String
-- **Examples**: `101`<br>`3B`
+| | |
+| --- | --- |
+| **Attribute** | `unit` |
+| **Description** | The unit number of the business licence. |
+| **Source** | Municipal Business Licence System of Record (provided by the applicant and verified against property records). |
+| **Data Type** | String |
+| **Examples** | `101`<br>`3B` |
 
 *Unit Type (012)*
 
-- **Attribute**: `unit_type`
-- **Description**: The unit type of the business licence.
-- **Source**: Municipal Business Licence System of Record.
-- **Data Type**: String
-- **Examples**: `Suite`<br>`Basement`
+| | |
+| --- | --- |
+| **Attribute** | `unit_type` |
+| **Description** | The unit type of the business licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `Suite`<br>`Basement` |
 
 *Street Number (013)*
 
-- **Attribute**: `street_number`
-- **Description**: The street number that precedes the street name of the business licence location.
-- **Source**: Municipal Business Licence System of Record (verified against civic address records).
-- **Data Type**: String
-- **Examples**: `1234`
+| | |
+| --- | --- |
+| **Attribute** | `street_number` |
+| **Description** | The street number that precedes the street name of the business licence location. |
+| **Source** | Municipal Business Licence System of Record (verified against civic address records). |
+| **Data Type** | String |
+| **Examples** | `1234` |
 
 *Street Name (014)*
 
-- **Attribute**: `street_name`
-- **Description**: The street name of the business licence.
-- **Source**: Municipal Business Licence System of Record (verified against civic address records).
-- **Data Type**: String
-- **Examples**: `Main Street`<br>`West 4th Avenue`
+| | |
+| --- | --- |
+| **Attribute** | `street_name` |
+| **Description** | The street name of the business licence. |
+| **Source** | Municipal Business Licence System of Record (verified against civic address records). |
+| **Data Type** | String |
+| **Examples** | `Main Street`<br>`West 4th Avenue` |
 
 *Municipality (015)*
 
-- **Attribute**: `municipality`
-- **Description**: The municipality of the business licence.
-- **Source**: Municipal Business Licence System of Record.
-- **Data Type**: String
-- **Examples**: `Vancouver`
+| | |
+| --- | --- |
+| **Attribute** | `municipality` |
+| **Description** | The municipality of the business licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `Vancouver` |
 
 *Municipality Status (016)*
 
-- **Attribute**: `municipality_status`
-- **Description**: Municipality type of the licensed location.
-- **Source**: Municipal Business Licence System of Record.
-- **Data Type**: String
-- **Examples**: `City`
+| | |
+| --- | --- |
+| **Attribute** | `municipality_status` |
+| **Description** | Municipality type of the licensed location. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `City` |
 
 *Regional District (017)*
 
-- **Attribute**: `regional_district`
-- **Description**: One of the twenty-seven regional districts in British Columbia.
-- **Source**: Municipal Business Licence System of Record (derived from property records).
-- **Data Type**: String
-- **Examples**: `Metro Vancouver`
+| | |
+| --- | --- |
+| **Attribute** | `regional_district` |
+| **Description** | One of the twenty-seven regional districts in British Columbia. |
+| **Source** | Municipal Business Licence System of Record (derived from property records). |
+| **Data Type** | String |
+| **Examples** | `Metro Vancouver` |
 
 *Province or Territory (018)*
 
-- **Attribute**: `province_territory`
-- **Description**: The province or territory of the business licence.
-- **Source**: Municipal Business Licence System of Record.
-- **Data Type**: String
-- **Examples**: `British Columbia`
+| | |
+| --- | --- |
+| **Attribute** | `province_territory` |
+| **Description** | The province or territory of the business licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `British Columbia` |
 
 *Postal Code (019)*
 
-- **Attribute**: `postal_code`
-- **Description**: The postal code of the business licence.
-- **Source**: Municipal Business Licence System of Record (verified against Canada Post format).
-- **Data Type**: String
-- **Examples**: `V6B 2Y5`
+| | |
+| --- | --- |
+| **Attribute** | `postal_code` |
+| **Description** | The postal code of the business licence. |
+| **Source** | Municipal Business Licence System of Record (verified against Canada Post format). |
+| **Data Type** | String |
+| **Examples** | `V6B 2Y5` |
 
 *Country (020)*
 
-- **Attribute**: `country`
-- **Description**: The country of the business licence.
-- **Source**: Municipal Business Licence System of Record.
-- **Data Type**: String
-- **Examples**: `Canada`
+| | |
+| --- | --- |
+| **Attribute** | `country` |
+| **Description** | The country of the business licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `Canada` |
 
 *Full Licence Address (021)*
 
-- **Attribute**: `full_licence_address`
-- **Description**: Combination of individual address attributes.
-- **Source**: Municipal Business Licence System of Record (derived from applicant submissions and verified against property and identity records).
-- **Data Type**: String
-- **Examples**: `Suite, Unit 201, 123 Main Street, Vancouver, BC, V6B 2Y1, Canada`
+| | |
+| --- | --- |
+| **Attribute** | `full_licence_address` |
+| **Description** | Combination of individual address attributes. |
+| **Source** | Municipal Business Licence System of Record (derived from applicant submissions and verified against property and identity records). |
+| **Data Type** | String |
+| **Examples** | `Suite, Unit 201, 123 Main Street, Vancouver, BC, V6B 2Y1, Canada` |
 
 *Local Area (023)*
 
-- **Attribute**: `local_area`
-- **Description**: Local area definition. For Vancouver, one of the twenty-two neighbourhoods where the licensed location exists.
-- **Source**: Municipal Business Licence System of Record (derived from municipal planning datasets).
-- **Data Type**: String
-- **Examples**: `Kitsilano`<br>`Downtown`
+| | |
+| --- | --- |
+| **Attribute** | `local_area` |
+| **Description** | Local area definition. For Vancouver, one of the twenty-two neighbourhoods where the licensed location exists. |
+| **Source** | Municipal Business Licence System of Record (derived from municipal planning datasets). |
+| **Data Type** | String |
+| **Examples** | `Kitsilano`<br>`Downtown` |
 
 *GIS Coordinates (028)*
 
-- **Attribute**: `GIS_coordinates`
-- **Description**: The geographic coordinates of the licensed location.
-- **Source**: City of Vancouver GIS dataset.
-- **Data Type**: String (lat,long)
-- **Examples**: `49.2827,-123.1207`
+| | |
+| --- | --- |
+| **Attribute** | `GIS_coordinates` |
+| **Description** | The geographic coordinates of the licensed location. |
+| **Source** | City of Vancouver GIS dataset. |
+| **Data Type** | String (lat,long) |
+| **Examples** | `49.2827,-123.1207` |
 
 *Short Address (034)*
 
-- **Attribute**: `short_address`
-- **Description**: A shortened address string consisting of unit, street number, and street name of the licensed property.
-- **Source**: Municipal Business Licence System of Record (derived from `unit`, `street_number`, and `street_name`).
-- **Data Type**: String
-- **Examples**: `#201 123 Main Street`<br> `456 Granville St`
+| | |
+| --- | --- |
+| **Attribute** | `short_address` |
+| **Description** | A shortened address string consisting of unit, street number, and street name of the licensed property. |
+| **Source** | Municipal Business Licence System of Record (derived from `unit`, `street_number`, and `street_name`). |
+| **Data Type** | String |
+| **Examples** | `#201 123 Main Street`<br> `456 Granville St` |
 
 #### 4.3.4 Attributes about the Property
 
 *Property Residence Type (022)*
 
-- **Attribute**: `property_residence_type`
-- **Description**: The type of property residence.
-- **Source**: Municipal Business Licence System of Record.
-- **Data Type**: String
-- **Examples**: `Condominium`<br>`Single Family`
+| | |
+| --- | --- |
+| **Attribute** | `property_residence_type` |
+| **Description** | The type of property residence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `Condominium`<br>`Single Family` |
 
 *Location Type (024)*
 
-- **Attribute**: `location_type`
-- **Description**: The type of business licensed location.
-- **Source**: Applicant declaration in Municipal Business Licence System of Record; validated against BC Person Credential attributes.
-- **Data Type**: String
-- **Examples**: `Principal Residence`<br>`Secondary Suite`
+| | |
+| --- | --- |
+| **Attribute** | `location_type` |
+| **Description** | The type of business licensed location. |
+| **Source** | Applicant declaration in Municipal Business Licence System of Record; validated against BC Person Credential attributes. |
+| **Data Type** | String |
+| **Examples** | `Principal Residence`<br>`Secondary Suite` |
 
 *Number of Dwelling Units (025)*
 
-- **Attribute**: `number_of_dwelling_unitsint`
-- **Description**: The number of dwelling units at the licensed location. Specific to LTR business licence types.
-- **Source**: Municipal Business Licence System of Record (verified against property assessment records).
-- **Data Type**: Integer
-- **Examples**: `1`<br>`12`
+| | |
+| --- | --- |
+| **Attribute** | `number_of_dwelling_unitsint` |
+| **Description** | The number of dwelling units at the licensed location. Specific to LTR business licence types. |
+| **Source** | Municipal Business Licence System of Record (verified against property assessment records). |
+| **Data Type** | Integer |
+| **Examples** | `1`<br>`12` |
 
 *Parcel Identifier (PID) (026)*
 
-- **Attribute**: `PID`
-- **Description**: The nine digit parcel identifier.
-- **Source**: Municipal Business Licence System of Record.
-- **Data Type**: String (9-digit numeric)
-- **Examples**: `012-345-678`
+| | |
+| --- | --- |
+| **Attribute** | `PID` |
+| **Description** | The nine digit parcel identifier. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String (9-digit numeric) |
+| **Examples** | `012-345-678` |
 
 *Strata Flag (027)*
 
-- **Attribute**: `strata_flag`
-- **Description**: Indicates whether the property is part of a strata (condominium) development.
-- **Source**: Municipal Business Licence System of Record.
-- **Data Type**: Boolean
-- **Examples**: `true`<br>`false`
+| | |
+| --- | --- |
+| **Attribute** | `strata_flag` |
+| **Description** | Indicates whether the property is part of a strata (condominium) development. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | Boolean |
+| **Examples** | `true`<br>`false` |
 
 #### 4.3.5 Attributes about Evidence
 
@@ -394,35 +454,43 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Identity Verification Proof (029)*
 
-- **Attribute**: `identity_verification_proof`
-- **Description**: Specifies the method and proofs used to confirm the applicant’s identity (e.g., BC Person Credential).
-- **Source**: Municipal Business Licence System of Record (validated against BC Person Credential).
-- **Data Type**: JSON
-- **Examples**: `BC Person Credential`<br> `{ "verification_method": "digital", "proofs": ["Person Credential"] }`
+| | |
+| --- | --- |
+| **Attribute** | `identity_verification_proof` |
+| **Description** | Specifies the method and proofs used to confirm the applicant’s identity (e.g., BC Person Credential). |
+| **Source** | Municipal Business Licence System of Record (validated against BC Person Credential). |
+| **Data Type** | JSON |
+| **Examples** | `BC Person Credential`<br> `{ "verification_method": "digital", "proofs": ["Person Credential"] }` |
 
 *Primary Address Verification Proof (030)*
 
-- **Attribute**: `primary_address_verification_proof`
-- **Description**: Specifies the method used to verify the applicant’s primary residential address.
-- **Source**: Municipal Business Licence System of Record (verified against ICBC address history)
-- **Data Type**: JSON
-- **Examples**: `ICBC Address Record`<br> `{ "verification_method": "manual", "proofs": ["ICBC Residential Address History"] }`
+| | |
+| --- | --- |
+| **Attribute** | `primary_address_verification_proof` |
+| **Description** | Specifies the method used to verify the applicant’s primary residential address. |
+| **Source** | Municipal Business Licence System of Record (verified against ICBC address history) |
+| **Data Type** | JSON |
+| **Examples** | `ICBC Address Record`<br> `{ "verification_method": "manual", "proofs": ["ICBC Residential Address History"] }` |
 
 *Property Owner Proof (031)*
 
-- **Attribute**: `property_owner_proof`
-- **Description**: Specifies the evidence provided to demonstrate legal ownership of the property associated with the business licence.
-- **Source**: Municipal Business Licence System of Record.
-- **Data Type**: JSON
-- **Examples**: `Title Record`<br> `{ "verification_method": "digital", "proofs": ["Property Ownership Record"] }`
+| | |
+| --- | --- |
+| **Attribute** | `property_owner_proof` |
+| **Description** | Specifies the evidence provided to demonstrate legal ownership of the property associated with the business licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | JSON |
+| **Examples** | `Title Record`<br> `{ "verification_method": "digital", "proofs": ["Property Ownership Record"] }` |
 
 *Authorized Verification Proof (032)*
 
-- **Attribute**: `authorized_verification_proof`
-- **Description**: Specifies the evidence used to confirm that the applicant is authorized by the property owner to apply for or hold the business licence.
-- **Source**: Applicant-submitted authorization letters or municipal approval records; stored in the Municipal Business Licence System of Record.
-- **Data Type**: JSON
-- **Examples**: `Signed Owner Authorization Letter`<br> `{ "verification_method": "manual", "proofs": ["Owner Authorization Letter", "Municipal Approval Form"] }`
+| | |
+| --- | --- |
+| **Attribute** | `authorized_verification_proof` |
+| **Description** | Specifies the evidence used to confirm that the applicant is authorized by the property owner to apply for or hold the business licence. |
+| **Source** | Applicant-submitted authorization letters or municipal approval records; stored in the Municipal Business Licence System of Record. |
+| **Data Type** | JSON |
+| **Examples** | `Signed Owner Authorization Letter`<br> `{ "verification_method": "manual", "proofs": ["Owner Authorization Letter", "Municipal Approval Form"] }` |
 
 ## 5. Implementations
 

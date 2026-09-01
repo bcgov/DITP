@@ -88,7 +88,10 @@ def table_to_markdown(table_html: str) -> str:
     if not rows:
         return table_html
 
-    lines = [f"- **{normalize_label(key)}**: {value}" for key, value in rows]
+    lines = ["| | |", "| --- | --- |"]
+    for key, value in rows:
+        label = normalize_label(key)
+        lines.append(f"| **{label}** | {value} |")
     return "\n".join(lines)
 
 

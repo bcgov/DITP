@@ -54,10 +54,12 @@ The Municipal Services Digital Letter of Authorization (MSDiLOA) credential is a
 
 The credential is intended to be used in a wide range of municipal service contexts, both alone or alongside other credentials (e.g., BC Person Credential, Business Licence credentials), as a trusted source of authorization information for verifiers such as municipal service departments, licensing and permitting offices, or other government agencies.
 
-- **Credential**: Municipal Services Digital Letter of Authorization (MSDiLOA)
-- **Schema**: Municipal Services Digital Letter of Authorization
-- **Governing Authority**: City of Vancouver (Founding Authority) <br> Future: Municipal Consortium
-- **First Issuer**: City of Vancouver <br> [https://vancouver.ca/](https://vancouver.ca/)
+| | |
+| --- | --- |
+| **Credential** | Municipal Services Digital Letter of Authorization (MSDiLOA) |
+| **Schema** | Municipal Services Digital Letter of Authorization |
+| **Governing Authority** | City of Vancouver (Founding Authority) <br> Future: Municipal Consortium |
+| **First Issuer** | City of Vancouver <br> [https://vancouver.ca/](https://vancouver.ca/) |
 
 ### 2.1 Attribute Summary
 
@@ -192,155 +194,191 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Given Names (001)*
 
-- **Attribute**: `authorized_person_given_names`
-- **Description**: The given names of the person who has been granted authorization to consume municipal services.
-- **Source**: Verified via proof request presented by the BC Services Card App at time of application.
-- **Data Type**: String
-- **Examples**: `John`<br>`Mary Anne`
+| | |
+| --- | --- |
+| **Attribute** | `authorized_person_given_names` |
+| **Description** | The given names of the person who has been granted authorization to consume municipal services. |
+| **Source** | Verified via proof request presented by the BC Services Card App at time of application. |
+| **Data Type** | String |
+| **Examples** | `John`<br>`Mary Anne` |
 
 *Surname (002)*
 
-- **Attribute**: `authorized_person_family_name`
-- **Description**: The family name of the person who has been granted authorization to consume municipal services.
-- **Source**: Verified via proof request presented by the BC Services Card App at time of application.
-- **Data Type**: String
-- **Examples**: `Doe`<br>`Smith`
+| | |
+| --- | --- |
+| **Attribute** | `authorized_person_family_name` |
+| **Description** | The family name of the person who has been granted authorization to consume municipal services. |
+| **Source** | Verified via proof request presented by the BC Services Card App at time of application. |
+| **Data Type** | String |
+| **Examples** | `Doe`<br>`Smith` |
 
 #### 4.3.2 Attributes about the Authorization
 
 *Business name (003)*
 
-- **Attribute**: `authorized_business_name`
-- **Description**: The name of the business that is being authorized.
-- **Source**: Municipal system of record (authorization application).
-- **Data Type**: String
-- **Examples**: `XYZ Incorporated`
+| | |
+| --- | --- |
+| **Attribute** | `authorized_business_name` |
+| **Description** | The name of the business that is being authorized. |
+| **Source** | Municipal system of record (authorization application). |
+| **Data Type** | String |
+| **Examples** | `XYZ Incorporated` |
 
 *Licence number (004)*
 
-- **Attribute**: `authorized_business_licence`
-- **Description**: The number of the related business licence that is being authorized.
-- **Source**: Municipal system of record (authorization application).
-- **Data Type**: String
-- **Examples**: `#BL 26-110904`
+| | |
+| --- | --- |
+| **Attribute** | `authorized_business_licence` |
+| **Description** | The number of the related business licence that is being authorized. |
+| **Source** | Municipal system of record (authorization application). |
+| **Data Type** | String |
+| **Examples** | `#BL 26-110904` |
 
 #### 4.3.3 Attributes about the Location
 
 *Location (005)*
 
-- **Attribute**: `authorized_location_full_address`
-- **Description**: The complete address of the location for which the applicant is requesting authorization to consume services.
-- **Source**: Municipal system of record (verified against civic address records and property records).
-- **Data Type**: String
-- **Examples**: `Suite 301, 123 Main Street, Vancouver, BC, V6B 2Y5, Canada`<br>`456 Oak Avenue, Victoria, BC, V8W 1N7, Canada`
+| | |
+| --- | --- |
+| **Attribute** | `authorized_location_full_address` |
+| **Description** | The complete address of the location for which the applicant is requesting authorization to consume services. |
+| **Source** | Municipal system of record (verified against civic address records and property records). |
+| **Data Type** | String |
+| **Examples** | `Suite 301, 123 Main Street, Vancouver, BC, V6B 2Y5, Canada`<br>`456 Oak Avenue, Victoria, BC, V8W 1N7, Canada` |
 
 *Parcel Identifier (PID) (006)*
 
-- **Attribute**: `authorized_parcel_identifier`
-- **Description**: A PID (Parcel Identifier) is a nine-digit number that uniquely identifies a parcel in the land title register of British Columbia. The registrar assigns PID numbers to parcels for which a title is being entered in the computer register as a registered title. Format: `###-###-###` (three groups of three digits separated by dashes).
-- **Source**: Municipal system of record (authorization application).
-- **Data Type**: String
-- **Examples**: `031-144-956`
+| | |
+| --- | --- |
+| **Attribute** | `authorized_parcel_identifier` |
+| **Description** | A PID (Parcel Identifier) is a nine-digit number that uniquely identifies a parcel in the land title register of British Columbia. The registrar assigns PID numbers to parcels for which a title is being entered in the computer register as a registered title. Format: `###-###-###` (three groups of three digits separated by dashes). |
+| **Source** | Municipal system of record (authorization application). |
+| **Data Type** | String |
+| **Examples** | `031-144-956` |
 
 *Short address (018)*
 
-- **Attribute**: `authorized_location_short_address`
-- **Description**: Combination of unit number + street number + street name.
-- **Source**: Municipal system of record (verified against civic address records and property records).
-- **Data Type**: String
-- **Examples**: `111 Example St`
+| | |
+| --- | --- |
+| **Attribute** | `authorized_location_short_address` |
+| **Description** | Combination of unit number + street number + street name. |
+| **Source** | Municipal system of record (verified against civic address records and property records). |
+| **Data Type** | String |
+| **Examples** | `111 Example St` |
 
 #### 4.3.4 Attributes about the Authorizer
 
 *Authorized services (007)*
 
-- **Attribute**: `authorized_services`
-- **Description**: A human-readable, comma-separated list of the short names of the municipal services authorized under this credential. A single MSDiLOA may authorize multiple services. The authoritative, machine-readable list — including each service's identifier and individual expiry date — is carried in `authorized_services_json`.
-- **Source**: Municipal system of record (authorization application).
-- **Data Type**: String (comma-separated list)
-- **Examples**: `Short-Term Rental`<br>`Short-Term Rental, Residential Parking Permit`
+| | |
+| --- | --- |
+| **Attribute** | `authorized_services` |
+| **Description** | A human-readable, comma-separated list of the short names of the municipal services authorized under this credential. A single MSDiLOA may authorize multiple services. The authoritative, machine-readable list — including each service's identifier and individual expiry date — is carried in `authorized_services_json`. |
+| **Source** | Municipal system of record (authorization application). |
+| **Data Type** | String (comma-separated list) |
+| **Examples** | `Short-Term Rental`<br>`Short-Term Rental, Residential Parking Permit` |
 
 *Permission granted by (008)*
 
-- **Attribute**: `authorizer_role_type`
-- **Description**: The role or capacity in which the authorizer is granting authorization (e.g., property owner, business owner).
-- **Source**: Municipal system of record (verified against property or business ownership records).
-- **Data Type**: String
-- **Examples**: `Property Owner`<br>`Business Owner`
+| | |
+| --- | --- |
+| **Attribute** | `authorizer_role_type` |
+| **Description** | The role or capacity in which the authorizer is granting authorization (e.g., property owner, business owner). |
+| **Source** | Municipal system of record (verified against property or business ownership records). |
+| **Data Type** | String |
+| **Examples** | `Property Owner`<br>`Business Owner` |
 
 *Grantor business name (009)*
 
-- **Attribute**: `authorizer_business_name`
-- **Description**: If applicable, the name of the business that is authorizing the consumption of services. The authorizing person may use a digital Business Licence credential to share this information. If not applicable, this value will be "N/A".
-- **Source**: Verified via digital Business Licence credential or municipal business records.
-- **Data Type**: String
-- **Examples**: `Downtown Properties Ltd.`<br>`N/A`
+| | |
+| --- | --- |
+| **Attribute** | `authorizer_business_name` |
+| **Description** | If applicable, the name of the business that is authorizing the consumption of services. The authorizing person may use a digital Business Licence credential to share this information. If not applicable, this value will be "N/A". |
+| **Source** | Verified via digital Business Licence credential or municipal business records. |
+| **Data Type** | String |
+| **Examples** | `Downtown Properties Ltd.`<br>`N/A` |
 
 *Grantor licence number (010)*
 
-- **Attribute**: `authorizer_business_licence`
-- **Description**: The number of the related business licence of the authorizer.
-- **Source**: Verified via digital Business Licence credential or municipal business records.
-- **Data Type**: String
-- **Examples**: `Downtown Properties Ltd.`<br>`N/A`
+| | |
+| --- | --- |
+| **Attribute** | `authorizer_business_licence` |
+| **Description** | The number of the related business licence of the authorizer. |
+| **Source** | Verified via digital Business Licence credential or municipal business records. |
+| **Data Type** | String |
+| **Examples** | `Downtown Properties Ltd.`<br>`N/A` |
 
 #### 4.3.5 Attributes about the Evidence
 
 *Verification method (011)*
 
-- **Attribute**: `verification_method`
-- **Description**: Indicates whether digital credentials were used as proof of verification. Value = "Manual" if no digital credentials were used. If a Property Owner Credential was used, value = "Digital".
-- **Source**: Municipal system of record (based on verification method used).
-- **Data Type**: String
-- **Examples**: `Manual`<br>`Digital`
+| | |
+| --- | --- |
+| **Attribute** | `verification_method` |
+| **Description** | Indicates whether digital credentials were used as proof of verification. Value = "Manual" if no digital credentials were used. If a Property Owner Credential was used, value = "Digital". |
+| **Source** | Municipal system of record (based on verification method used). |
+| **Data Type** | String |
+| **Examples** | `Manual`<br>`Digital` |
 
 *Authorization statement (012)*
 
-- **Attribute**: `authorization_details`
-- **Description**: Human readable natural language statement of the authorization (e.g., "I, [Authorizer Name], hereby authorize [Authorized Party Name]...").
-- **Source**: Municipal system of record (generated from authorization record).
-- **Data Type**: String
-- **Examples**: `The [authorizer_role_type], hereby authorize [authorized_person_given_name + authorized_person_family_name] to apply for a [authorized_services] for the property located at [authorized_location_full_address]`
+| | |
+| --- | --- |
+| **Attribute** | `authorization_details` |
+| **Description** | Human readable natural language statement of the authorization (e.g., "I, [Authorizer Name], hereby authorize [Authorized Party Name]..."). |
+| **Source** | Municipal system of record (generated from authorization record). |
+| **Data Type** | String |
+| **Examples** | `The [authorizer_role_type], hereby authorize [authorized_person_given_name + authorized_person_family_name] to apply for a [authorized_services] for the property located at [authorized_location_full_address]` |
 
 *Valid from (013)*
 
-- **Attribute**: `authorization_valid_from_dateint`
-- **Description**: The date on which the MSDiLOA credential was issued.
-- **Source**: Municipal system of record (system-generated timestamp).
-- **Data Type**: Integer (YYYYMMDD)
-- **Examples**: `20260105`
+| | |
+| --- | --- |
+| **Attribute** | `authorization_valid_from_dateint` |
+| **Description** | The date on which the MSDiLOA credential was issued. |
+| **Source** | Municipal system of record (system-generated timestamp). |
+| **Data Type** | Integer (YYYYMMDD) |
+| **Examples** | `20260105` |
 
 *Valid until (014)*
 
-- **Attribute**: `authorization_valid_until_dateint`
-- **Description**: The date on which the MSDiLOA credential will expire.
-- **Source**: Municipal system of record (system-generated timestamp).
-- **Data Type**: Integer (YYYYMMDD)
-- **Examples**: `20260205`
+| | |
+| --- | --- |
+| **Attribute** | `authorization_valid_until_dateint` |
+| **Description** | The date on which the MSDiLOA credential will expire. |
+| **Source** | Municipal system of record (system-generated timestamp). |
+| **Data Type** | Integer (YYYYMMDD) |
+| **Examples** | `20260205` |
 
 *Authorization number (015)*
 
-- **Attribute**: `authorization_id`
-- **Description**: A unique identifier that correlates to the underlying proof data and authorization documentation, stored in the system of record.
-- **Source**: Municipal system of record (system-generated).
-- **Data Type**: String
-- **Examples**: `AUTH-2026-00123-PROOF`<br>`LOA-456789-VER`
+| | |
+| --- | --- |
+| **Attribute** | `authorization_id` |
+| **Description** | A unique identifier that correlates to the underlying proof data and authorization documentation, stored in the system of record. |
+| **Source** | Municipal system of record (system-generated). |
+| **Data Type** | String |
+| **Examples** | `AUTH-2026-00123-PROOF`<br>`LOA-456789-VER` |
 
 *Authorized services — machine-readable (016)*
 
-- **Attribute**: `authorized_services_json`
-- **Description**: The authoritative, machine-readable list of services authorized under this credential — one entry per service, each carrying its own identifier, short name, expiry date, and options. This is what allows multiple services in a single credential to carry _different_ expiry dates, and what enables interoperable parsing across municipalities (e.g., for business-to-business authorization). A formal, versioned JSON Schema for this value is defined in Appendix C; the `schema_version` field identifies the structure in use. This is an experimental structure and is expected to evolve.
-- **Source**: Municipal system of record (authorization application).
-- **Data Type**: JSON (string-encoded; conforms to the published, versioned `authorized_services_json` schema)
-- **Examples**: `{ "schema_version": "1.0", "services": [ { "service_id": "STR-001", "service_short_name": "Short-Term Rental", "auth_expiry_date": "2026-12-31", "service_options": [ { "name": "document_types", "value": "Development Permits, Building Permits", "type": "string_list", "mandatory": true } ] }, { "service_id": "RPP-002", "service_short_name": "Residential Parking Permit", "auth_expiry_date": "2027-06-30", "service_options": [] } ] }`
+| | |
+| --- | --- |
+| **Attribute** | `authorized_services_json` |
+| **Description** | The authoritative, machine-readable list of services authorized under this credential — one entry per service, each carrying its own identifier, short name, expiry date, and options. This is what allows multiple services in a single credential to carry _different_ expiry dates, and what enables interoperable parsing across municipalities (e.g., for business-to-business authorization). A formal, versioned JSON Schema for this value is defined in Appendix C; the `schema_version` field identifies the structure in use. This is an experimental structure and is expected to evolve. |
+| **Source** | Municipal system of record (authorization application). |
+| **Data Type** | JSON (string-encoded; conforms to the published, versioned `authorized_services_json` schema) |
+| **Examples** | `{ "schema_version": "1.0", "services": [ { "service_id": "STR-001", "service_short_name": "Short-Term Rental", "auth_expiry_date": "2026-12-31", "service_options": [ { "name": "document_types", "value": "Development Permits, Building Permits", "type": "string_list", "mandatory": true } ] }, { "service_id": "RPP-002", "service_short_name": "Residential Parking Permit", "auth_expiry_date": "2027-06-30", "service_options": [] } ] }` |
 
 *Authorized services summary (017)*
 
-- **Attribute**: `authorized_services_summary`
-- **Description**: A human-readable summary of the authorized service(s) and validity, for display on the wallet card. Derived from `authorized_services` and the credential's validity dates.
-- **Source**: Municipal system of record (authorization application).
-- **Data Type**: String
-- **Examples**: `Short-Term Rental / EXP 2026-12-31`
+| | |
+| --- | --- |
+| **Attribute** | `authorized_services_summary` |
+| **Description** | A human-readable summary of the authorized service(s) and validity, for display on the wallet card. Derived from `authorized_services` and the credential's validity dates. |
+| **Source** | Municipal system of record (authorization application). |
+| **Data Type** | String |
+| **Examples** | `Short-Term Rental / EXP 2026-12-31` |
 
 ## 5. Implementations
 

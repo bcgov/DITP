@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Convert two-column key/value markdown tables to bullet lists."""
+"""Convert key/value bullet lists back to two-column markdown tables."""
 
 from __future__ import annotations
 
@@ -13,37 +13,32 @@ FILES = [
     Path("docs/governance/business/rental-property-business-licence.md"),
 ]
 
-TABLE_START = re.compile(
-    r"^\| \| \|$\n^\| --- \| --- \|$\n((?:^\| .+\|$\n?)+)",
+KV_BULLET = re.compile(r"^- \*\*(.+?)\*\*: (.*)$")
+BLOCK = re.compile(
+    r"(?:^- \*\*.+?\*\*: .*(?:\n|$))+(?:\n)?",
     re.MULTILINE,
 )
-ROW = re.compile(r"^\| (.+?) \| (.+?) \|$")
 
 
-def normalize_label(cell: str) -> str:
-    label = cell.strip()
-    if label.startswith("**") and label.endswith("**"):
-        label = label[2:-2]
-    return label.rstrip(":")
-
-
-def table_to_bullets(block: str) -> str:
-    bullets: list[str] = []
+def bullets_to_table(block: str) -> str:
+    rows: list[str] = []
     for line in block.strip().splitlines():
-        match = ROW.match(line)
+        match = KV_BULLET.match(line)
         if not match:
             continue
-        label = normalize_label(match.group(1))
+        label = match.group(1).strip()
         value = match.group(2).strip()
-        bullets.append(f"- **{label}**: {value}")
-    return "\n".join(bullets) + "\n"
+        rows.append(f"| **{label}** | {value} |")
+    if not rows:
+        return block
+    return "| | |\n| --- | --- |\n" + "\n".join(rows) + "\n"
 
 
 def convert(content: str) -> str:
     def replace(match: re.Match[str]) -> str:
-        return table_to_bullets(match.group(1))
+        return bullets_to_table(match.group(0))
 
-    return TABLE_START.sub(replace, content)
+    return BLOCK.sub(replace, content)
 
 
 def main() -> int:
