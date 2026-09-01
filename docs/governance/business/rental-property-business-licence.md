@@ -19,11 +19,11 @@ The Rental Property Business Licence credential is a verifiable credential (VC) 
 
 The credential is intended to be used in a wide range of contexts, both alone or alongside other credentials (e.g., BC Person Credential, Digital Business Card), as a trusted source of business licence information for verifiers such as property listing platforms, municipal inspectors, or other government agencies.
 
-|                         |                                                                                                     |
-|-------------------------|-----------------------------------------------------------------------------------------------------|
-| **Credential:**         | Rental Property Business Licence                                                                    |
-| **Schema:**             | Rental Property Business Licence                                                                    |
-| **Issuer:**             | City of Vancouver (Business Licenses Division) <br/> [https://vancouver.ca/](https://vancouver.ca/) |     
+| | |
+| --- | --- |
+| **Credential** | Rental Property Business Licence |
+| **Schema** | Rental Property Business Licence |
+| **Issuer** | City of Vancouver (Business Licenses Division) <br> [https://vancouver.ca/](https://vancouver.ca/) |
 
 ### 2.1 Attribute Summary
 
@@ -144,767 +144,309 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Business Licence Type (001)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>business_licence_type</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The category of licence issued.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>Short-Term Rental</code><br></br><code>Long-Term Rental</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `business_licence_type` |
+| **Description** | The category of licence issued. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `Short-Term Rental`<br>`Long-Term Rental` |
 
 *Business Sub-Type (002)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>business_sub_type</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The sub type of business licence being issued.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>Multiple Dwelling - 99 Year Lease</code><br></br><code>Non-profit Housing</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `business_sub_type` |
+| **Description** | The sub type of business licence being issued. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `Multiple Dwelling - 99 Year Lease`<br>`Non-profit Housing` |
 
 *Licence Number (004)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>licence_number</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The issued licence number of the business licence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>24-123456</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `licence_number` |
+| **Description** | The issued licence number of the business licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `24-123456` |
 
 *Licence Revision Number (005)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>licence_revision_number</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The revision number of the issued business licence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>1</code><br></br><code>2</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `licence_revision_number` |
+| **Description** | The revision number of the issued business licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `1`<br>`2` |
 
 *Issue Date (008)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>licence_issued_dateint</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The issued date of the business licence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>Integer (YYYYMMDD)</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>20250115</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `licence_issued_dateint` |
+| **Description** | The issued date of the business licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | Integer (YYYYMMDD) |
+| **Examples** | `20250115` |
 
 *Licence Start Date (009)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>licence_valid_from_dateint</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The date on which the business is permitted to begin operating under the issued licence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>Integer (YYYYMMDD)</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>20250115</code><br></br><code>20240901</code></td>
-  </tr>
-</table>
-
+| | |
+| --- | --- |
+| **Attribute** | `licence_valid_from_dateint` |
+| **Description** | The date on which the business is permitted to begin operating under the issued licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | Integer (YYYYMMDD) |
+| **Examples** | `20250115`<br>`20240901` |
 
 *Expiry Date (010)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>licence_expiry_dateint</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The expiry date of the business licence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>Integer (YYYYMMDD)</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>20251231</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `licence_expiry_dateint` |
+| **Description** | The expiry date of the business licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | Integer (YYYYMMDD) |
+| **Examples** | `20251231` |
 
 *Licence Summary (033)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>licence_summary</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>A concatenated summary of the business licence number and expiry date.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record (derived from <code>licence_number</code> and <code>licence_expiry_dateint</code>).</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td>
-      <code>BL-123456 | Expires 20250907</code><br></br>
-      <code>LTR-987654 | Expires 20241231</code>
-    </td>
-  </tr>
-</table>
-
+| | |
+| --- | --- |
+| **Attribute** | `licence_summary` |
+| **Description** | A concatenated summary of the business licence number and expiry date. |
+| **Source** | Municipal Business Licence System of Record (derived from `licence_number` and `licence_expiry_dateint`). |
+| **Data Type** | String |
+| **Examples** | `BL-123456 \| Expires 20250907`<br>`LTR-987654 \| Expires 20241231` |
 
 #### 4.3.2 Attributes about the Business / Licence Holder
 
 *Business / Trade Name (003)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>business_trade_name</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The business name of the operator of the business licence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record (as reported by the applicant).</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>West End Suites</code><br></br><code>Maple Rentals</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `business_trade_name` |
+| **Description** | The business name of the operator of the business licence. |
+| **Source** | Municipal Business Licence System of Record (as reported by the applicant). |
+| **Data Type** | String |
+| **Examples** | `West End Suites`<br>`Maple Rentals` |
 
 *Licence Holder First Name (006)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>licence_holder_given_name</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>Licence holder given name of the business licence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Verified via BC Person Credential and government-issued photo ID.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>Jane</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `licence_holder_given_name` |
+| **Description** | Licence holder given name of the business licence. |
+| **Source** | Verified via BC Person Credential and government-issued photo ID. |
+| **Data Type** | String |
+| **Examples** | `Jane` |
 
 *Licence Holder Last Name (007)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>licence_holder_family_name</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>Licence holder family name of the business licence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Verified via BC Person Credential and government-issued photo ID.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>Doe</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `licence_holder_family_name` |
+| **Description** | Licence holder family name of the business licence. |
+| **Source** | Verified via BC Person Credential and government-issued photo ID. |
+| **Data Type** | String |
+| **Examples** | `Doe` |
 
 #### 4.3.3 Attributes about the Location
 
 *Unit (011)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>unit</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The unit number of the business licence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record (provided by the applicant and verified against property records).</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>101</code><br></br><code>3B</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `unit` |
+| **Description** | The unit number of the business licence. |
+| **Source** | Municipal Business Licence System of Record (provided by the applicant and verified against property records). |
+| **Data Type** | String |
+| **Examples** | `101`<br>`3B` |
 
 *Unit Type (012)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>unit_type</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The unit type of the business licence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>Suite</code><br></br><code>Basement</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `unit_type` |
+| **Description** | The unit type of the business licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `Suite`<br>`Basement` |
 
 *Street Number (013)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>street_number</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The street number that precedes the street name of the business licence location.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record (verified against civic address records).</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>1234</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `street_number` |
+| **Description** | The street number that precedes the street name of the business licence location. |
+| **Source** | Municipal Business Licence System of Record (verified against civic address records). |
+| **Data Type** | String |
+| **Examples** | `1234` |
 
 *Street Name (014)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>street_name</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The street name of the business licence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record (verified against civic address records).</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>Main Street</code><br></br><code>West 4th Avenue</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `street_name` |
+| **Description** | The street name of the business licence. |
+| **Source** | Municipal Business Licence System of Record (verified against civic address records). |
+| **Data Type** | String |
+| **Examples** | `Main Street`<br>`West 4th Avenue` |
 
 *Municipality (015)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>municipality</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The municipality of the business licence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>Vancouver</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `municipality` |
+| **Description** | The municipality of the business licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `Vancouver` |
 
 *Municipality Status (016)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>municipality_status</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>Municipality type of the licensed location.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>City</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `municipality_status` |
+| **Description** | Municipality type of the licensed location. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `City` |
 
 *Regional District (017)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>regional_district</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>One of the twenty-seven regional districts in British Columbia.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record (derived from property records).</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>Metro Vancouver</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `regional_district` |
+| **Description** | One of the twenty-seven regional districts in British Columbia. |
+| **Source** | Municipal Business Licence System of Record (derived from property records). |
+| **Data Type** | String |
+| **Examples** | `Metro Vancouver` |
 
 *Province or Territory (018)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>province_territory</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The province or territory of the business licence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>British Columbia</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `province_territory` |
+| **Description** | The province or territory of the business licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `British Columbia` |
 
 *Postal Code (019)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>postal_code</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The postal code of the business licence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record (verified against Canada Post format).</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>V6B 2Y5</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `postal_code` |
+| **Description** | The postal code of the business licence. |
+| **Source** | Municipal Business Licence System of Record (verified against Canada Post format). |
+| **Data Type** | String |
+| **Examples** | `V6B 2Y5` |
 
 *Country (020)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>country</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The country of the business licence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>Canada</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `country` |
+| **Description** | The country of the business licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `Canada` |
 
 *Full Licence Address (021)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>full_licence_address</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>Combination of individual address attributes.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record (derived from applicant submissions and verified against property and identity records).</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>Suite, Unit 201, 123 Main Street, Vancouver, BC, V6B 2Y1, Canada</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `full_licence_address` |
+| **Description** | Combination of individual address attributes. |
+| **Source** | Municipal Business Licence System of Record (derived from applicant submissions and verified against property and identity records). |
+| **Data Type** | String |
+| **Examples** | `Suite, Unit 201, 123 Main Street, Vancouver, BC, V6B 2Y1, Canada` |
 
 *Local Area (023)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>local_area</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>Local area definition. For Vancouver, one of the twenty-two neighbourhoods where the licensed location exists.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record (derived from municipal planning datasets).</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>Kitsilano</code><br></br><code>Downtown</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `local_area` |
+| **Description** | Local area definition. For Vancouver, one of the twenty-two neighbourhoods where the licensed location exists. |
+| **Source** | Municipal Business Licence System of Record (derived from municipal planning datasets). |
+| **Data Type** | String |
+| **Examples** | `Kitsilano`<br>`Downtown` |
 
 *GIS Coordinates (028)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>GIS_coordinates</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The geographic coordinates of the licensed location.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>City of Vancouver GIS dataset.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String (lat,long)</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>49.2827,-123.1207</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `GIS_coordinates` |
+| **Description** | The geographic coordinates of the licensed location. |
+| **Source** | City of Vancouver GIS dataset. |
+| **Data Type** | String (lat,long) |
+| **Examples** | `49.2827,-123.1207` |
 
 *Short Address (034)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>short_address</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>A shortened address string consisting of unit, street number, and street name of the licensed property.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record (derived from <code>unit</code>, <code>street_number</code>, and <code>street_name</code>).</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td>
-      <code>#201 123 Main Street</code><br></br>
-      <code>456 Granville St</code>
-    </td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `short_address` |
+| **Description** | A shortened address string consisting of unit, street number, and street name of the licensed property. |
+| **Source** | Municipal Business Licence System of Record (derived from `unit`, `street_number`, and `street_name`). |
+| **Data Type** | String |
+| **Examples** | `#201 123 Main Street`<br> `456 Granville St` |
 
 #### 4.3.4 Attributes about the Property
 
 *Property Residence Type (022)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>property_residence_type</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The type of property residence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>Condominium</code><br></br><code>Single Family</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `property_residence_type` |
+| **Description** | The type of property residence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String |
+| **Examples** | `Condominium`<br>`Single Family` |
 
 *Location Type (024)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>location_type</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The type of business licensed location.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Applicant declaration in Municipal Business Licence System of Record; validated against BC Person Credential attributes.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>Principal Residence</code><br></br><code>Secondary Suite</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `location_type` |
+| **Description** | The type of business licensed location. |
+| **Source** | Applicant declaration in Municipal Business Licence System of Record; validated against BC Person Credential attributes. |
+| **Data Type** | String |
+| **Examples** | `Principal Residence`<br>`Secondary Suite` |
 
 *Number of Dwelling Units (025)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>number_of_dwelling_unitsint</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The number of dwelling units at the licensed location. Specific to LTR business licence types.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record (verified against property assessment records).</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>Integer</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>1</code><br></br><code>12</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `number_of_dwelling_unitsint` |
+| **Description** | The number of dwelling units at the licensed location. Specific to LTR business licence types. |
+| **Source** | Municipal Business Licence System of Record (verified against property assessment records). |
+| **Data Type** | Integer |
+| **Examples** | `1`<br>`12` |
 
 *Parcel Identifier (PID) (026)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>PID</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The nine digit parcel identifier.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String (9-digit numeric)</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>012-345-678</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `PID` |
+| **Description** | The nine digit parcel identifier. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | String (9-digit numeric) |
+| **Examples** | `012-345-678` |
 
 *Strata Flag (027)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>strata_flag</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>Indicates whether the property is part of a strata (condominium) development.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>Boolean</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>true</code><br></br><code>false</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `strata_flag` |
+| **Description** | Indicates whether the property is part of a strata (condominium) development. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | Boolean |
+| **Examples** | `true`<br>`false` |
 
 #### 4.3.5 Attributes about Evidence
 
@@ -912,127 +454,43 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Identity Verification Proof (029)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>identity_verification_proof</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>Specifies the method and proofs used to confirm the applicant’s identity (e.g., BC Person Credential).</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record (validated against BC Person Credential).</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>JSON</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td>
-      <code>BC Person Credential</code><br></br>
-      <pre><code>{
-  "verification_method": "digital",
-  "proofs": ["Person Credential"]
-}</code></pre>
-    </td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `identity_verification_proof` |
+| **Description** | Specifies the method and proofs used to confirm the applicant’s identity (e.g., BC Person Credential). |
+| **Source** | Municipal Business Licence System of Record (validated against BC Person Credential). |
+| **Data Type** | JSON |
+| **Examples** | `BC Person Credential`<br> `{ "verification_method": "digital", "proofs": ["Person Credential"] }` |
 
 *Primary Address Verification Proof (030)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>primary_address_verification_proof</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>Specifies the method used to verify the applicant’s primary residential address.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record (verified against ICBC address history)</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>JSON</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td>
-      <code>ICBC Address Record</code><br></br>
-      <pre><code>{
-  "verification_method": "manual",
-  "proofs": ["ICBC Residential Address History"]
-}</code></pre>
-    </td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `primary_address_verification_proof` |
+| **Description** | Specifies the method used to verify the applicant’s primary residential address. |
+| **Source** | Municipal Business Licence System of Record (verified against ICBC address history) |
+| **Data Type** | JSON |
+| **Examples** | `ICBC Address Record`<br> `{ "verification_method": "manual", "proofs": ["ICBC Residential Address History"] }` |
 
 *Property Owner Proof (031)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>property_owner_proof</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>Specifies the evidence provided to demonstrate legal ownership of the property associated with the business licence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Municipal Business Licence System of Record.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>JSON</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td>
-      <code>Title Record</code><br></br>
-      <pre><code>{
-  "verification_method": "digital",
-  "proofs": ["Property Ownership Record"]
-}</code></pre>
-    </td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `property_owner_proof` |
+| **Description** | Specifies the evidence provided to demonstrate legal ownership of the property associated with the business licence. |
+| **Source** | Municipal Business Licence System of Record. |
+| **Data Type** | JSON |
+| **Examples** | `Title Record`<br> `{ "verification_method": "digital", "proofs": ["Property Ownership Record"] }` |
 
 *Authorized Verification Proof (032)*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>authorized_verification_proof</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>Specifies the evidence used to confirm that the applicant is authorized by the property owner to apply for or hold the business licence.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Applicant-submitted authorization letters or municipal approval records; stored in the Municipal Business Licence System of Record.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>JSON</td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td>
-      <code>Signed Owner Authorization Letter</code><br></br>
-      <pre><code>{
-  "verification_method": "manual",
-  "proofs": ["Owner Authorization Letter", "Municipal Approval Form"]
-}</code></pre>
-    </td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `authorized_verification_proof` |
+| **Description** | Specifies the evidence used to confirm that the applicant is authorized by the property owner to apply for or hold the business licence. |
+| **Source** | Applicant-submitted authorization letters or municipal approval records; stored in the Municipal Business Licence System of Record. |
+| **Data Type** | JSON |
+| **Examples** | `Signed Owner Authorization Letter`<br> `{ "verification_method": "manual", "proofs": ["Owner Authorization Letter", "Municipal Approval Form"] }` |
 
 ## 5. Implementations
 
@@ -1060,4 +518,4 @@ The Governing Authority of this Credential document attests that the following i
 |---|---|---|---|
 |CANdy Production|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_PROD/domain/4575)|<code>R12pguaP3VF2WiE6vAsiPF:3:CL:921:Rental Property Business Licence</code>|[prod-property-rental-business-licence](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/prod-property-rental-business-licence)|
 |CANdy Test|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_TEST/domain/922)|<code>ARK5s3QZtjL5X65mLoubdk:3:CL:921:Rental Property Business Licence</code>|[test-property-rental-business-licence](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/test-property-rental-business-licence)|
-|CANdy Dev|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/38196)|<code>YWnESLB4SH275SMNvaJJ1L:3:CL:38195:Rental Property Business Licence/code>|[dev-property-rental-business-licence](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/dev-property-rental-business-licence)|
+|CANdy Dev|[Rental Property Business Licence](https://candyscan.digitaltrust.gov.bc.ca/tx/CANDY_DEV/domain/38196)|<code>YWnESLB4SH275SMNvaJJ1L:3:CL:38195:Rental Property Business Licence</code>|[dev-property-rental-business-licence](https://github.com/bcgov/aries-oca-bundles/tree/main/OCABundles/schema/CityOfVancouver/dev-property-rental-business-licence)|

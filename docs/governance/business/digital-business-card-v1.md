@@ -18,84 +18,22 @@ The Digital Business Card (DBC) credential is a verifiable credential (VC) issue
 
 The DBC credential is intended to be used in a wide range of contexts, both alone or in conjunction with other credentials, as a source of trusted information. 
 
-<table>
-  <tr>
-    <th>Credential</th>
-    <td>Digital Business Card</td>
-  </tr>
-  <tr>
-    <th>Issuer</th>
-    <td>Government of British Columbia through Registries and Online Services (“BC Registries”), part of Service BC in the British Columbia Ministry of Citizens’ Services</td>
-  </tr>
-  <tr>
-    <th>Issuer DID</th>
-    <td>
-        <a href="https://candyscan.idlab.org/tx/CANDY_PROD/domain/348">AcZpBDz3oxmKrpcuPcdKai</a>
-    </td>
-  </tr>
-  <tr>
-    <th>Schema</th>
-        <td>
-            Digital Business Card, version 1.0.0 
-            <ul><li>Schema ID: <a href="https://candyscan.idlab.org/tx/CANDY_PROD/domain/350">AcZpBDz3oxmKrpcuPcdKai:2:Digital Business Card:1.0.0</a></li></ul>
-        </td>
-  </tr>
-  <tr>
-    <th>Credential</th>
-        <td>
-          Digital Business Card, version 1.0
-          <ul><li>Cred Def ID: <a href="https://candyscan.idlab.org/tx/CANDY_PROD/domain/351">AcZpBDz3oxmKrpcuPcdKai:3:CL:350:default</a></li></ul></td>
-  </tr>
-  <tr>
-    <th>Data Registry</th>
-    <td> 
-        CANdy Ledger
-        <ul>
-            <li>Ledger <a href="https://candyscan.idlab.org/home/CANDY_PROD">browser</a></li>
-            <li>Ledger <a href="https://github.com/ICCS-ISAC/dtrust-reconu/blob/main/CANdy/prod/pool_transactions_genesis">Pool Genesis File</a></li>
-        </ul>    
-    </td>
-  </tr>
-  <tr>
-    <th>Holders</th>
-    <td>
-        The DBC credential is currently only available to individuals whose identity and relationship to the business are well established. Currently, they must meet the following criteria:
-        <ul>
-            <li>The business is a Sole Proprietorship, General Partnership, or Benefit Company that was originally registered in the modern BC Registries system</li>
-            <li>The individual authenticated to BC Registries using their BC Services Card digital identity, is affiliated with the business through a BC Registries Account that can manage the business, and is a Proprietor, Partner, or Director of the business</li>
-        </ul>
-    </td>
-</tr>
-<tr>
-    <th>Data Source</th>
-    <td>
-        The DBC credential data comes from the BC Registries system. More specifically:
-        <ul>
-            <li>The individual’s name is from the BC Services Card digital identity; they are ultimately from subject’s Canadian foundational identity unless taken from marriage documents</li>
-            <li>Business information is from the BC Registries system; some of this is reported by the business via filings</li>
-            <li>The Credential ID is system-generated</li>
-            <li>CRA Business Number is provided directly to the BC Registries system for the business from the Canada Revenue Agency system</li>
-        </ul>
-    </td>
-</tr>
-<tr>
-    <th>Revocation</th>
-    <td>
-        A DBC credential will be revoked – and sometimes re-issued – due to both automated events (e.g., data updates) and manual events. These are described in greater detail in the Revocation section, below.
-    </td>
-</tr>
-<tr>
-    <th>Assurance</th>
-    <td>
-        The DBC credential will only be issued to individuals who create and access the BC Registries system using the BC Services Card digital identity, which has been assessed and is accepted by the Government of Canada as a Trusted Digital Identity Level 3 for persons, and for whom BC Registries have established a relationship to the business in question.
-    </td>
-</tr>
-</table>
-
+| | |
+| --- | --- |
+| **Credential** | Digital Business Card |
+| **Issuer** | Government of British Columbia through Registries and Online Services (“BC Registries”), part of Service BC in the British Columbia Ministry of Citizens’ Services |
+| **Issuer DID** | [AcZpBDz3oxmKrpcuPcdKai](https://candyscan.idlab.org/tx/CANDY_PROD/domain/348) |
+| **Schema** | Digital Business Card, version 1.0.0 <ul><li>Schema ID: [AcZpBDz3oxmKrpcuPcdKai:2:Digital Business Card:1.0.0](https://candyscan.idlab.org/tx/CANDY_PROD/domain/350)</li></ul> |
+| **Credential** | Digital Business Card, version 1.0 <ul><li>Cred Def ID: [AcZpBDz3oxmKrpcuPcdKai:3:CL:350:default](https://candyscan.idlab.org/tx/CANDY_PROD/domain/351)</li></ul> |
+| **Data Registry** | CANdy Ledger <ul> <li>Ledger [browser](https://candyscan.idlab.org/home/CANDY_PROD)</li> <li>Ledger [Pool Genesis File](https://github.com/ICCS-ISAC/dtrust-reconu/blob/main/CANdy/prod/pool_transactions_genesis)</li> </ul> |
+| **Holders** | The DBC credential is currently only available to individuals whose identity and relationship to the business are well established. Currently, they must meet the following criteria: <ul> <li>The business is a Sole Proprietorship, General Partnership, or Benefit Company that was originally registered in the modern BC Registries system</li> <li>The individual authenticated to BC Registries using their BC Services Card digital identity, is affiliated with the business through a BC Registries Account that can manage the business, and is a Proprietor, Partner, or Director of the business</li> </ul> |
+| **Data Source** | The DBC credential data comes from the BC Registries system. More specifically: <ul> <li>The individual’s name is from the BC Services Card digital identity; they are ultimately from subject’s Canadian foundational identity unless taken from marriage documents</li> <li>Business information is from the BC Registries system; some of this is reported by the business via filings</li> <li>The Credential ID is system-generated</li> <li>CRA Business Number is provided directly to the BC Registries system for the business from the Canada Revenue Agency system</li> </ul> |
+| **Revocation** | A DBC credential will be revoked – and sometimes re-issued – due to both automated events (e.g., data updates) and manual events. These are described in greater detail in the Revocation section, below. |
+| **Assurance** | The DBC credential will only be issued to individuals who create and access the BC Registries system using the BC Services Card digital identity, which has been assessed and is accepted by the Government of Canada as a Trusted Digital Identity Level 3 for persons, and for whom BC Registries have established a relationship to the business in question. |
 
 ### Attribute Summary
 
-Attributes are fully described below in the [Attributes](#bookmark=id.d4k15yq1kvi3) section.
+Attributes are fully described below in the [Attributes](#attributes) section.
 
 | **Name** | **Attribute** | **Data Type** |
 | --- | --- | --- |
@@ -138,7 +76,7 @@ BC Registries is responsible for:
 
 ### Schema and Credential Definition Governance
 
-The Digital Business Card credential definition implements the Digital Business Card schema (see [Credential Overview](#bookmark=id.35ojgs4iy68y) for references). Both the credential definition and the schema are published by BC Registries, part of Service BC in the British Columbia Ministry of Citizens’ Services. BC Registries may, after any consultation and notification it deems appropriate, update either the credential definition and/or the schema.
+The Digital Business Card credential definition implements the Digital Business Card schema (see [Credential Overview](#credential-overview) for references). Both the credential definition and the schema are published by BC Registries, part of Service BC in the British Columbia Ministry of Citizens’ Services. BC Registries may, after any consultation and notification it deems appropriate, update either the credential definition and/or the schema.
 
 ### Issuer Data Source
 
@@ -149,7 +87,7 @@ The data in the DBC credential comes from the BC Registries system, which genera
 - **BC Services Card digital identity** – the identity information about the individual is created when the individual first accesses the BC Registries system using their BC Services Card digital identity and authenticator. The BC Services Card digital identity is a high assurance credential, with the individual’s name matching the name on their foundational identity document
 - **Canada Revenue Agency** – the information is provided to the BC Registries system directly from a CRA system
 
-The source of each attribute is described in the [Attributes](#bookmark=id.d4k15yq1kvi3) section.
+The source of each attribute is described in the [Attributes](#attributes) section.
 
 #### Data Updates
 
@@ -212,55 +150,16 @@ The attributes of the DBC credential are organized by topic and described below.
 
 *Credential ID*
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>credential_id</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>A unique identifier assigned by BC Registries that is specific to the relationship between the individual and the business.<br></br>
-    This is intended to aid verifiers when the name of the individual and/or the business changes.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>BC Registries system, created when a credential is first issued to the individual for the business.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td><ul><li>8 digits, padded left with zeros</li></ul></td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul>
-            <li>Never blank</li>
-            <li>When a different credential is issued to the same individual for the same organization, the value of the Credential ID will be the same in both credentials unless BC Registries cannot confirm it is the same individual.</li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>00000001</code><br></br><code>00012345</code></td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-        <ul>
-            <li>This attribute is intended to aid verifiers when they transact with:</li>
-                <ul>
-                    <li>Multiple individuals affiliated with a single business</li>
-                    <li>Single individuals who represent multiple businesses</li>
-                    <li>Individuals who have changed their name</li>
-                </ul>
-        </ul>
-    </td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `credential_id` |
+| **Description** | A unique identifier assigned by BC Registries that is specific to the relationship between the individual and the business.<br> This is intended to aid verifiers when the name of the individual and/or the business changes. |
+| **Source** | BC Registries system, created when a credential is first issued to the individual for the business. |
+| **Data Type** | String |
+| **Format** | <ul><li>8 digits, padded left with zeros</li></ul> |
+| **Rules** | <ul> <li>Never blank</li> <li>When a different credential is issued to the same individual for the same organization, the value of the Credential ID will be the same in both credentials unless BC Registries cannot confirm it is the same individual.</li> </ul> |
+| **Examples** | `00000001`<br>`00012345` |
+| **Notes** | <ul> <li>This attribute is intended to aid verifiers when they transact with:</li> <ul> <li>Multiple individuals affiliated with a single business</li> <li>Single individuals who represent multiple businesses</li> <li>Individuals who have changed their name</li> </ul> </ul> |
 
 ### Attributes about the Individual
 
@@ -278,468 +177,116 @@ Note that the Person credential gets the values for its name attribute values fr
 
 #### Given Names
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>given_names</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The individual's documented given names (first and middle) recorded from valid identification.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>The individual’s Registries Account name attributes, which come from the individual’s BC Services Card digital identity.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td>
-        <ul>
-            <li>Maximum 47 characters</li>
-            <li>Always upper case</li>
-            <li>Consists of three names, a first name and up to two middle names, delimited by spaces</li>
-            <ul><li>Each name may be up to 15 characters long</li></ul>
-            <li>The only characters allowed are the letters A through Z and the following "special characters": hyphen, apostrophe, period, and space</li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul>
-            <li>May be blank</li>
-            <li>First and middle names over 15 characters are truncated</li>
-            <li>If the individual has a mononym this attribute will <i>normally</i> have no value and the mononym will appear in the family_name attribute</li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-        <ul>
-            <li>Names can start with special characters</li>
-            <li>First Names and Middle Names with spaces or punctuation (e.g., “JO ANNE”, “JIAN U”, “D’ARCY”) will have the spaces and punctuation removed (e.g., “JOANNE”, “JIANU”, “DARCY”)</li>
-            <li>To work around the removal of spaces, described above, a first name with a space (e.g. “JO ANNE”) may be entered as a first name and a middle name (e.g., “JO ANNE” is entered as “JO” and “ANNE”). This will appear as “JO ANNE” in the given_names attribute, which is indistinguishable from an individual whose first name is “JO” and whose middle name is “ANNE”. Similarly, a middle name with a space (e.g., “MARY LOU”) may be entered as two middle names (e.g., “MARY” and “LOU”). As such, spaces in the given_names attribute are not a reliable delimiter between names</li>
-            <li>Some legacy records have only an initial for a middle name (e.g., "J" for "James")</li>
-            <li>A mononym may be duplicated in this attribute and the family_name unless it has a space in it, in which case the first part may be recorded in this attribute and the second part in the family_name attribute</li>
-        </ul>
-    </td>
-  </tr>
-</table>
-
+| | |
+| --- | --- |
+| **Attribute** | `given_names` |
+| **Description** | The individual's documented given names (first and middle) recorded from valid identification. |
+| **Source** | The individual’s Registries Account name attributes, which come from the individual’s BC Services Card digital identity. |
+| **Data Type** | String |
+| **Format** | <ul> <li>Maximum 47 characters</li> <li>Always upper case</li> <li>Consists of three names, a first name and up to two middle names, delimited by spaces</li> <ul><li>Each name may be up to 15 characters long</li></ul> <li>The only characters allowed are the letters A through Z and the following "special characters": hyphen, apostrophe, period, and space</li> </ul> |
+| **Rules** | <ul> <li>May be blank</li> <li>First and middle names over 15 characters are truncated</li> <li>If the individual has a mononym this attribute will _normally_ have no value and the mononym will appear in the family_name attribute</li> </ul> |
+| **Notes** | <ul> <li>Names can start with special characters</li> <li>First Names and Middle Names with spaces or punctuation (e.g., “JO ANNE”, “JIAN U”, “D’ARCY”) will have the spaces and punctuation removed (e.g., “JOANNE”, “JIANU”, “DARCY”)</li> <li>To work around the removal of spaces, described above, a first name with a space (e.g. “JO ANNE”) may be entered as a first name and a middle name (e.g., “JO ANNE” is entered as “JO” and “ANNE”). This will appear as “JO ANNE” in the given_names attribute, which is indistinguishable from an individual whose first name is “JO” and whose middle name is “ANNE”. Similarly, a middle name with a space (e.g., “MARY LOU”) may be entered as two middle names (e.g., “MARY” and “LOU”). As such, spaces in the given_names attribute are not a reliable delimiter between names</li> <li>Some legacy records have only an initial for a middle name (e.g., "J" for "James")</li> <li>A mononym may be duplicated in this attribute and the family_name unless it has a space in it, in which case the first part may be recorded in this attribute and the second part in the family_name attribute</li> </ul> |
 
 #### Family Name
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>family_name</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The individual's documented family name (i.e. surname) recorded from valid identification.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>The individual’s Registries Account name attributes, which come from the individual’s BC Services Card digital identity.</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td>
-        <ul>
-            <li>Maximum 35 characters</li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul>
-            <li>Never blank</li>
-            <li>Always upper case</li>
-            <li>Family names over 35 characters are truncated</li>
-            <li>The only characters allowed are the letters A through Z and the following "special characters": hyphen, apostrophe, period, and space</li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-        <ul>
-            <li>Last Names with spaces or punctuation (e.g., “St. John”, “O’Brian”, “van Cleef”, “Scott-Bigsby”) will have the spaces and punctuation included if the individual has a photo BC Services Card but removed if the individual has a non-photo BC Services Card</li>
-            <li>A mononym may be duplicated in this attribute and the family_name unless it has a space in it, in which case the first part may be recorded in this attribute and the second part in the family_name attribute</li>
-        </ul>
-    </td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `family_name` |
+| **Description** | The individual's documented family name (i.e. surname) recorded from valid identification. |
+| **Source** | The individual’s Registries Account name attributes, which come from the individual’s BC Services Card digital identity. |
+| **Data Type** | String |
+| **Format** | <ul> <li>Maximum 35 characters</li> </ul> |
+| **Rules** | <ul> <li>Never blank</li> <li>Always upper case</li> <li>Family names over 35 characters are truncated</li> <li>The only characters allowed are the letters A through Z and the following "special characters": hyphen, apostrophe, period, and space</li> </ul> |
+| **Notes** | <ul> <li>Last Names with spaces or punctuation (e.g., “St. John”, “O’Brian”, “van Cleef”, “Scott-Bigsby”) will have the spaces and punctuation included if the individual has a photo BC Services Card but removed if the individual has a non-photo BC Services Card</li> <li>A mononym may be duplicated in this attribute and the family_name unless it has a space in it, in which case the first part may be recorded in this attribute and the second part in the family_name attribute</li> </ul> |
 
 #### Role
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td>role</td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>
-        The person's role(s) with the business, if any. <br></br>
-        Roles are limited to those tracked by BC Registries, and do not normally correspond to job titles.
-    </td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>
-        Currently a business filing, either from when an individual sets up the entity or a subsequent filing, creates the record of the invidual's role.
-        The relationship between the individual being issued the credential and their role is determined at issuance by matching the name of the individual to that in the filing and either:
-        <ul>
-            <li>Confirming in the system that the individual was the person who registered the entity</li>
-            <li>Having the individual self-attest that they are the individual with the matching role</li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td>
-        <ul>
-            <li>Maximum 30 characters</li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul>
-            <li>Roles are limited to those defined by BC Registries (and/or its governing legislation) and by the Business Type. (For clarity, this will not include the person's role within or in relation to the organization, e.g., CEO, Accountant.)</li>
-            <li>Allowable values (currently) are:</li>
-            <ul>
-                <li>Proprietor</li>
-                <li>Partner</li>
-                <li>Director</li>
-            </ul>
-            <li>In future, allowable values may include:</li>
-            <ul>
-                <li>Incorporator</li>
-                <li><em>blank</em>, indicating that the individual does not have any of the other roles, or if their role(s) cannot be confidently determined by BC Registries</li>
-            </ul>
-            <li>An individual who is an Incorporator may have another role. In future, multiple roles will be separated by commas</li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>Partner</code><br></br><code>Proprietor</code><br></br><code>Incorporator,Director</code></td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | role |
+| **Description** | The person's role(s) with the business, if any. <br> Roles are limited to those tracked by BC Registries, and do not normally correspond to job titles. |
+| **Source** | Currently a business filing, either from when an individual sets up the entity or a subsequent filing, creates the record of the invidual's role. The relationship between the individual being issued the credential and their role is determined at issuance by matching the name of the individual to that in the filing and either: <ul> <li>Confirming in the system that the individual was the person who registered the entity</li> <li>Having the individual self-attest that they are the individual with the matching role</li> </ul> |
+| **Data Type** | String |
+| **Format** | <ul> <li>Maximum 30 characters</li> </ul> |
+| **Rules** | <ul> <li>Roles are limited to those defined by BC Registries (and/or its governing legislation) and by the Business Type. (For clarity, this will not include the person's role within or in relation to the organization, e.g., CEO, Accountant.)</li> <li>Allowable values (currently) are:</li> <ul> <li>Proprietor</li> <li>Partner</li> <li>Director</li> </ul> <li>In future, allowable values may include:</li> <ul> <li>Incorporator</li> <li>_blank_, indicating that the individual does not have any of the other roles, or if their role(s) cannot be confidently determined by BC Registries</li> </ul> <li>An individual who is an Incorporator may have another role. In future, multiple roles will be separated by commas</li> </ul> |
+| **Examples** | `Partner`<br>`Proprietor`<br>`Incorporator,Director` |
 
 ### Attributes about the Business
 
 #### Identifier
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>identifier</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>A unique and permanent identifier that BC Registries creates and assigns to the business at the time the business is incorporated or registered with BC Registries.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>BC Registries system, created when the business is registered or incorporated</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td>
-        <ul>
-            <li>10 characters</li>
-            <li>Typically two letters followed by eight digits</li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul>
-            <li>Never blank</li>
-            <li>Depending on the Business Type, the source of the BC Number is:</li>
-            <ul>
-                <li>Registration Number – Sole Proprietorship, General Partnership, and extra-provincial entities</li>
-                <li>Incorporation Number – Corporations, Societies, Cooperative Associations</li>
-            </ul>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>FM0055205</code></td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-        <ul><li>This identifier can be used to get additional information about the business from BC Registries through <a href="https://orgbook.gov.bc.ca/">OrgBook</a> or <a href="https://developer.api.bcregistry.gov.bc.ca/">BC Registries API Gateway</a>.</li></ul>
-        This attribute is in close alignment with:
-        <ul><li>Open Ownership schema: <code>Identifier ID</code></li></ul>
-    </td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `identifier` |
+| **Description** | A unique and permanent identifier that BC Registries creates and assigns to the business at the time the business is incorporated or registered with BC Registries. |
+| **Source** | BC Registries system, created when the business is registered or incorporated |
+| **Data Type** | String |
+| **Format** | <ul> <li>10 characters</li> <li>Typically two letters followed by eight digits</li> </ul> |
+| **Rules** | <ul> <li>Never blank</li> <li>Depending on the Business Type, the source of the BC Number is:</li> <ul> <li>Registration Number – Sole Proprietorship, General Partnership, and extra-provincial entities</li> <li>Incorporation Number – Corporations, Societies, Cooperative Associations</li> </ul> </ul> |
+| **Examples** | `FM0055205` |
+| **Notes** | <ul><li>This identifier can be used to get additional information about the business from BC Registries through [OrgBook](https://orgbook.gov.bc.ca/) or [BC Registries API Gateway](https://developer.api.bcregistry.gov.bc.ca/).</li></ul> This attribute is in close alignment with: <ul><li>Open Ownership schema: `Identifier ID`</li></ul> |
 
 #### CRA Business Number
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>cra_business_number</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>A unique identifier assigned to the business’ BC Registries business program area by the Canada Revenue Agency (CRA), a “BN15”.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Canada Revenue Agency,<ul><li>A business number is automatically provided to new B.C. corporations, businesses or societies as part of the registration or incorporation process.</li></ul></td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td>
-        <ul><li>15 characters</li></ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul>
-            <li>May be blank</li>
-            <ul><li>This will be blank if CRA has not created the business number or BC Registries does not know the Business Number assigned by CRA</li></ul>
-            <li>This will be a 15-digit (BN15) number</li>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>123456789BC0001</code></td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-        <ul>
-            <li>A business may change its Business Number with CRA, and CRA will normally update BC Registries of the change</li>
-            <li>For more information on Business Numbers, refer to the CRA</li>
-        </ul>
-        This attribute is in close alignment with:
-        <ul><li>XBRL schema: <code>identifierTaxCode</code></li></ul>
-    </td>
-  </tr>
-</table>
-
+| | |
+| --- | --- |
+| **Attribute** | `cra_business_number` |
+| **Description** | A unique identifier assigned to the business’ BC Registries business program area by the Canada Revenue Agency (CRA), a “BN15”. |
+| **Source** | Canada Revenue Agency,<ul><li>A business number is automatically provided to new B.C. corporations, businesses or societies as part of the registration or incorporation process.</li></ul> |
+| **Data Type** | String |
+| **Format** | <ul><li>15 characters</li></ul> |
+| **Rules** | <ul> <li>May be blank</li> <ul><li>This will be blank if CRA has not created the business number or BC Registries does not know the Business Number assigned by CRA</li></ul> <li>This will be a 15-digit (BN15) number</li> </ul> |
+| **Examples** | `123456789BC0001` |
+| **Notes** | <ul> <li>A business may change its Business Number with CRA, and CRA will normally update BC Registries of the change</li> <li>For more information on Business Numbers, refer to the CRA</li> </ul> This attribute is in close alignment with: <ul><li>XBRL schema: `identifierTaxCode`</li></ul> |
 
 #### Business Name
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>business_name</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The operating name the business has registered for itself with BC Registries.<br></br>In future this may also be the operating name of a general partnership or the legal name of an incorporated company, a society, or a cooperative association.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Business filing</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td>
-        <ul><li>Maximum 150 characters</li></ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul><li>Never blank</li></ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>Rogers Communications Canada Inc.</code><br></br><code>12345676, Inc</code><br></br><code>Twelve Oaks Construction</code></td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-        This attribute is in close alignment with:
-        <ul><li>Open Ownership schema: <code>name</code></li></ul>
-    </td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `business_name` |
+| **Description** | The operating name the business has registered for itself with BC Registries.<br>In future this may also be the operating name of a general partnership or the legal name of an incorporated company, a society, or a cooperative association. |
+| **Source** | Business filing |
+| **Data Type** | String |
+| **Format** | <ul><li>Maximum 150 characters</li></ul> |
+| **Rules** | <ul><li>Never blank</li></ul> |
+| **Examples** | `Rogers Communications Canada Inc.`<br>`12345676, Inc`<br>`Twelve Oaks Construction` |
+| **Notes** | This attribute is in close alignment with: <ul><li>Open Ownership schema: `name`</li></ul> |
 
 #### Business Type
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>business_type</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The type of business as defined by the legislation governing BC Registries.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>Business filing</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td>
-        <ul><li>Maximum 100 characters</li></ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul>
-            <li>Never blank</li>
-            <li>The possible values are:</li>
-            <ul>
-              <li>Sole Proprietorship</li>
-              <li>General Partnership</li>
-              <li>Benefit Company</li>
-            </ul>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>Sole Proprietorship</code><br></br><code>Benefit Company</code></td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-        <ul><li>Credential issuance will be limited to businesses that are created in the new BC Registries system. Additional business types may be added in the future</li></ul>
-        This attribute is in close alignment with:
-        <ul><li>Open Ownership schema: <code>entityType</code></li></ul>
-    </td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `business_type` |
+| **Description** | The type of business as defined by the legislation governing BC Registries. |
+| **Source** | Business filing |
+| **Data Type** | String |
+| **Format** | <ul><li>Maximum 100 characters</li></ul> |
+| **Rules** | <ul> <li>Never blank</li> <li>The possible values are:</li> <ul> <li>Sole Proprietorship</li> <li>General Partnership</li> <li>Benefit Company</li> </ul> </ul> |
+| **Examples** | `Sole Proprietorship`<br>`Benefit Company` |
+| **Notes** | <ul><li>Credential issuance will be limited to businesses that are created in the new BC Registries system. Additional business types may be added in the future</li></ul> This attribute is in close alignment with: <ul><li>Open Ownership schema: `entityType`</li></ul> |
 
 #### Registered On
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>registered_on_dateint</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The date the business was incorporated or registered in BC with BC Registries.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>BC Registries system</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td>
-        <ul><li>Eight digits in the format YYYYMMDD</li></ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul><li>Never blank</li></ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>20180816</code></td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-        For companies incorporated in BC, this attribute is in close alignment with:
-        <ul><li>Open Ownership schema: <code>foundingDate</code></li></ul>
-    </td>
-  </tr>
-</table>
-
+| | |
+| --- | --- |
+| **Attribute** | `registered_on_dateint` |
+| **Description** | The date the business was incorporated or registered in BC with BC Registries. |
+| **Source** | BC Registries system |
+| **Data Type** | String |
+| **Format** | <ul><li>Eight digits in the format YYYYMMDD</li></ul> |
+| **Rules** | <ul><li>Never blank</li></ul> |
+| **Examples** | `20180816` |
+| **Notes** | For companies incorporated in BC, this attribute is in close alignment with: <ul><li>Open Ownership schema: `foundingDate`</li></ul> |
 
 #### Company Status
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <td><code>company_status</code></td>
-  </tr>
-  <tr>
-    <th>Description</th>
-    <td>The status of the business at the time the credential is issued.</td>
-  </tr>
-  <tr>
-    <th>Source</th>
-    <td>BC Registries system, set when the business is first registered or incorporated and updated either by business filings or the Registrar (e.g., due to failure to file)</td>
-  </tr>
-  <tr>
-    <th>Data Type</th>
-    <td>String</td>
-  </tr>
-  <tr>
-    <th>Format</th>
-    <td></td>
-  </tr>
-  <tr>
-    <th>Rules</th>
-    <td>
-        <ul>
-            <li>Never blank</li>
-            <li>This may be either:</li>
-            <ul>
-                <li>Active</li>
-                <li>Historical</li>
-            </ul>
-        </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>Examples</th>
-    <td><code>Active</code><br></br><code>Historical</code></td>
-  </tr>
-  <tr>
-    <th>Notes</th>
-    <td>
-        There are cases where a person may represent a “Historic” business (e.g., tax audits can occur several years after a business is dissolved), and so it is possible for an individual have a DBC credential for such a business
-    </td>
-  </tr>
-</table>
+| | |
+| --- | --- |
+| **Attribute** | `company_status` |
+| **Description** | The status of the business at the time the credential is issued. |
+| **Source** | BC Registries system, set when the business is first registered or incorporated and updated either by business filings or the Registrar (e.g., due to failure to file) |
+| **Data Type** | String |
+| **Format** |  |
+| **Rules** | <ul> <li>Never blank</li> <li>This may be either:</li> <ul> <li>Active</li> <li>Historical</li> </ul> </ul> |
+| **Examples** | `Active`<br>`Historical` |
+| **Notes** | There are cases where a person may represent a “Historic” business (e.g., tax audits can occur several years after a business is dissolved), and so it is possible for an individual have a DBC credential for such a business |
