@@ -18,7 +18,7 @@ The Digital Business Card (DBC) credential is a verifiable credential (VC) issue
 
 The DBC credential is intended to be used in a wide range of contexts, both alone or in conjunction with other credentials, as a source of trusted information. 
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Credential** | Digital Business Card |
 | **Issuer** | Government of British Columbia through Registries and Online Services (“BC Registries”), part of Service BC in the British Columbia Ministry of Citizens’ Services |
@@ -151,7 +151,7 @@ The attributes of the DBC credential are organized by topic and described below.
 
 *Credential ID*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `credential_id` |
 | **Description** | A unique identifier assigned by BC Registries that is specific to the relationship between the individual and the business.<br> This is intended to aid verifiers when the name of the individual and/or the business changes. |
@@ -178,7 +178,7 @@ Note that the Person credential gets the values for its name attribute values fr
 
 #### Given Names
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `given_names` |
 | **Description** | The individual's documented given names (first and middle) recorded from valid identification. |
@@ -191,7 +191,7 @@ Note that the Person credential gets the values for its name attribute values fr
 
 #### Family Name
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `family_name` |
 | **Description** | The individual's documented family name (i.e. surname) recorded from valid identification. |
@@ -203,7 +203,7 @@ Note that the Person credential gets the values for its name attribute values fr
 
 #### Role
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | role |
 | **Description** | The person's role(s) with the business, if any. <br> Roles are limited to those tracked by BC Registries, and do not normally correspond to job titles. |
@@ -217,7 +217,7 @@ Note that the Person credential gets the values for its name attribute values fr
 
 #### Identifier
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `identifier` |
 | **Description** | A unique and permanent identifier that BC Registries creates and assigns to the business at the time the business is incorporated or registered with BC Registries. |
@@ -230,7 +230,7 @@ Note that the Person credential gets the values for its name attribute values fr
 
 #### CRA Business Number
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `cra_business_number` |
 | **Description** | A unique identifier assigned to the business’ BC Registries business program area by the Canada Revenue Agency (CRA), a “BN15”. |
@@ -244,7 +244,7 @@ Note that the Person credential gets the values for its name attribute values fr
 
 #### Business Name
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `business_name` |
 | **Description** | The operating name the business has registered for itself with BC Registries.<br>In future this may also be the operating name of a general partnership or the legal name of an incorporated company, a society, or a cooperative association. |
@@ -257,7 +257,7 @@ Note that the Person credential gets the values for its name attribute values fr
 
 #### Business Type
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `business_type` |
 | **Description** | The type of business as defined by the legislation governing BC Registries. |
@@ -270,7 +270,7 @@ Note that the Person credential gets the values for its name attribute values fr
 
 #### Registered On
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `registered_on_dateint` |
 | **Description** | The date the business was incorporated or registered in BC with BC Registries. |
@@ -284,7 +284,7 @@ Note that the Person credential gets the values for its name attribute values fr
 
 #### Company Status
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `company_status` |
 | **Description** | The status of the business at the time the credential is issued. |

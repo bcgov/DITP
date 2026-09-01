@@ -20,8 +20,8 @@ BOOKMARK_REPLACEMENTS = {
 }
 
 EMPTY_OVERVIEW_TABLE = re.compile(
-    r"^\|(\s+)\|(\s+)\|\s*$\n"
-    r"^\|[-\s|]+\|\s*$\n"
+    r"^\| Field \| Value \|\s*$\n"
+    r"^\| --- \| --- \|\s*$\n"
     r"^\| \*\*",
     re.MULTILINE,
 )
@@ -88,7 +88,7 @@ def table_to_markdown(table_html: str) -> str:
     if not rows:
         return table_html
 
-    lines = ["| Field | Value |", "| --- | --- |"]
+    lines = ["| | |", "| --- | --- |"]
     for key, value in rows:
         label = f"**{key}**" if not key.startswith("**") else key
         value = value.replace("\n", "<br>")
@@ -104,7 +104,7 @@ def convert_tables(content: str) -> str:
 
 
 def fix_overview_tables(content: str) -> str:
-    return EMPTY_OVERVIEW_TABLE.sub("| Field | Value |\n| --- | --- |\n| **", content)
+    return EMPTY_OVERVIEW_TABLE.sub("| | |\n| --- | --- |\n| **", content)
 
 
 def fix_misc(content: str) -> str:

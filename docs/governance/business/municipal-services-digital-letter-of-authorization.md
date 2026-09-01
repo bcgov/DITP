@@ -54,7 +54,7 @@ The Municipal Services Digital Letter of Authorization (MSDiLOA) credential is a
 
 The credential is intended to be used in a wide range of municipal service contexts, both alone or alongside other credentials (e.g., BC Person Credential, Business Licence credentials), as a trusted source of authorization information for verifiers such as municipal service departments, licensing and permitting offices, or other government agencies.
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Credential:**          | Municipal Services Digital Letter of Authorization (MSDiLOA)    |
 | **Schema:**              | Municipal Services Digital Letter of Authorization              |
@@ -194,7 +194,7 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Given Names (001)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `authorized_person_given_names` |
 | **Description** | The given names of the person who has been granted authorization to consume municipal services. |
@@ -204,7 +204,7 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Surname (002)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `authorized_person_family_name` |
 | **Description** | The family name of the person who has been granted authorization to consume municipal services. |
@@ -216,7 +216,7 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Business name (003)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `authorized_business_name` |
 | **Description** | The name of the business that is being authorized. |
@@ -226,7 +226,7 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Licence number (004)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `authorized_business_licence` |
 | **Description** | The number of the related business licence that is being authorized. |
@@ -238,7 +238,7 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Location (005)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `authorized_location_full_address` |
 | **Description** | The complete address of the location for which the applicant is requesting authorization to consume services. |
@@ -248,7 +248,7 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Parcel Identifier (PID) (006)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `authorized_parcel_identifier` |
 | **Description** | A PID (Parcel Identifier) is a nine-digit number that uniquely identifies a parcel in the land title register of British Columbia. The registrar assigns PID numbers to parcels for which a title is being entered in the computer register as a registered title. Format: `###-###-###` (three groups of three digits separated by dashes). |
@@ -258,7 +258,7 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Short address (018)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `authorized_location_short_address` |
 | **Description** | Combination of unit number + street number + street name. |
@@ -270,7 +270,7 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Authorized services (007)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `authorized_services` |
 | **Description** | A human-readable, comma-separated list of the short names of the municipal services authorized under this credential. A single MSDiLOA may authorize multiple services. The authoritative, machine-readable list — including each service's identifier and individual expiry date — is carried in `authorized_services_json`. |
@@ -280,7 +280,7 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Permission granted by (008)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `authorizer_role_type` |
 | **Description** | The role or capacity in which the authorizer is granting authorization (e.g., property owner, business owner). |
@@ -290,7 +290,7 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Grantor business name (009)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `authorizer_business_name` |
 | **Description** | If applicable, the name of the business that is authorizing the consumption of services. The authorizing person may use a digital Business Licence credential to share this information. If not applicable, this value will be "N/A". |
@@ -300,7 +300,7 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Grantor licence number (010)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `authorizer_business_licence` |
 | **Description** | The number of the related business licence of the authorizer. |
@@ -312,7 +312,7 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Verification method (011)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `verification_method` |
 | **Description** | Indicates whether digital credentials were used as proof of verification. Value = "Manual" if no digital credentials were used. If a Property Owner Credential was used, value = "Digital". |
@@ -322,7 +322,7 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Authorization statement (012)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `authorization_details` |
 | **Description** | Human readable natural language statement of the authorization (e.g., "I, [Authorizer Name], hereby authorize [Authorized Party Name]..."). |
@@ -332,7 +332,7 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Valid from (013)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `authorization_valid_from_dateint` |
 | **Description** | The date on which the MSDiLOA credential was issued. |
@@ -342,7 +342,7 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Valid until (014)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `authorization_valid_until_dateint` |
 | **Description** | The date on which the MSDiLOA credential will expire. |
@@ -352,7 +352,7 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Authorization number (015)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `authorization_id` |
 | **Description** | A unique identifier that correlates to the underlying proof data and authorization documentation, stored in the system of record. |
@@ -362,7 +362,7 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Authorized services — machine-readable (016)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `authorized_services_json` |
 | **Description** | The authoritative, machine-readable list of services authorized under this credential — one entry per service, each carrying its own identifier, short name, expiry date, and options. This is what allows multiple services in a single credential to carry _different_ expiry dates, and what enables interoperable parsing across municipalities (e.g., for business-to-business authorization). A formal, versioned JSON Schema for this value is defined in Appendix C; the `schema_version` field identifies the structure in use. This is an experimental structure and is expected to evolve. |
@@ -372,7 +372,7 @@ The attributes of the Municipal Services Digital Letter of Authorization credent
 
 *Authorized services summary (017)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `authorized_services_summary` |
 | **Description** | A human-readable summary of the authorized service(s) and validity, for display on the wallet card. Derived from `authorized_services` and the credential's validity dates. |

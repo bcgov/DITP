@@ -19,7 +19,7 @@ The Rental Property Business Licence credential is a verifiable credential (VC) 
 
 The credential is intended to be used in a wide range of contexts, both alone or alongside other credentials (e.g., BC Person Credential, Digital Business Card), as a trusted source of business licence information for verifiers such as property listing platforms, municipal inspectors, or other government agencies.
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Credential:**         | Rental Property Business Licence                                                                    |
 | **Schema:**             | Rental Property Business Licence                                                                    |
@@ -144,7 +144,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Business Licence Type (001)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `business_licence_type` |
 | **Description** | The category of licence issued. |
@@ -154,7 +154,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Business Sub-Type (002)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `business_sub_type` |
 | **Description** | The sub type of business licence being issued. |
@@ -164,7 +164,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Licence Number (004)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `licence_number` |
 | **Description** | The issued licence number of the business licence. |
@@ -174,7 +174,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Licence Revision Number (005)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `licence_revision_number` |
 | **Description** | The revision number of the issued business licence. |
@@ -184,7 +184,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Issue Date (008)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `licence_issued_dateint` |
 | **Description** | The issued date of the business licence. |
@@ -194,7 +194,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Licence Start Date (009)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `licence_valid_from_dateint` |
 | **Description** | The date on which the business is permitted to begin operating under the issued licence. |
@@ -205,7 +205,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Expiry Date (010)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `licence_expiry_dateint` |
 | **Description** | The expiry date of the business licence. |
@@ -215,7 +215,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Licence Summary (033)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `licence_summary` |
 | **Description** | A concatenated summary of the business licence number and expiry date. |
@@ -228,7 +228,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Business / Trade Name (003)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `business_trade_name` |
 | **Description** | The business name of the operator of the business licence. |
@@ -238,7 +238,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Licence Holder First Name (006)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `licence_holder_given_name` |
 | **Description** | Licence holder given name of the business licence. |
@@ -248,7 +248,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Licence Holder Last Name (007)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `licence_holder_family_name` |
 | **Description** | Licence holder family name of the business licence. |
@@ -260,7 +260,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Unit (011)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `unit` |
 | **Description** | The unit number of the business licence. |
@@ -270,7 +270,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Unit Type (012)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `unit_type` |
 | **Description** | The unit type of the business licence. |
@@ -280,7 +280,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Street Number (013)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `street_number` |
 | **Description** | The street number that precedes the street name of the business licence location. |
@@ -290,7 +290,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Street Name (014)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `street_name` |
 | **Description** | The street name of the business licence. |
@@ -300,7 +300,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Municipality (015)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `municipality` |
 | **Description** | The municipality of the business licence. |
@@ -310,7 +310,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Municipality Status (016)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `municipality_status` |
 | **Description** | Municipality type of the licensed location. |
@@ -320,7 +320,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Regional District (017)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `regional_district` |
 | **Description** | One of the twenty-seven regional districts in British Columbia. |
@@ -330,7 +330,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Province or Territory (018)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `province_territory` |
 | **Description** | The province or territory of the business licence. |
@@ -340,7 +340,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Postal Code (019)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `postal_code` |
 | **Description** | The postal code of the business licence. |
@@ -350,7 +350,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Country (020)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `country` |
 | **Description** | The country of the business licence. |
@@ -360,7 +360,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Full Licence Address (021)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `full_licence_address` |
 | **Description** | Combination of individual address attributes. |
@@ -370,7 +370,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Local Area (023)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `local_area` |
 | **Description** | Local area definition. For Vancouver, one of the twenty-two neighbourhoods where the licensed location exists. |
@@ -380,7 +380,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *GIS Coordinates (028)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `GIS_coordinates` |
 | **Description** | The geographic coordinates of the licensed location. |
@@ -390,7 +390,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Short Address (034)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `short_address` |
 | **Description** | A shortened address string consisting of unit, street number, and street name of the licensed property. |
@@ -402,7 +402,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Property Residence Type (022)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `property_residence_type` |
 | **Description** | The type of property residence. |
@@ -412,7 +412,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Location Type (024)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `location_type` |
 | **Description** | The type of business licensed location. |
@@ -422,7 +422,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Number of Dwelling Units (025)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `number_of_dwelling_unitsint` |
 | **Description** | The number of dwelling units at the licensed location. Specific to LTR business licence types. |
@@ -432,7 +432,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Parcel Identifier (PID) (026)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `PID` |
 | **Description** | The nine digit parcel identifier. |
@@ -442,7 +442,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Strata Flag (027)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `strata_flag` |
 | **Description** | Indicates whether the property is part of a strata (condominium) development. |
@@ -456,7 +456,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Identity Verification Proof (029)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `identity_verification_proof` |
 | **Description** | Specifies the method and proofs used to confirm the applicant’s identity (e.g., BC Person Credential). |
@@ -466,7 +466,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Primary Address Verification Proof (030)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `primary_address_verification_proof` |
 | **Description** | Specifies the method used to verify the applicant’s primary residential address. |
@@ -476,7 +476,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Property Owner Proof (031)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `property_owner_proof` |
 | **Description** | Specifies the evidence provided to demonstrate legal ownership of the property associated with the business licence. |
@@ -486,7 +486,7 @@ The attributes of the Rental Property Business Licence credential are organized 
 
 *Authorized Verification Proof (032)*
 
-| Field | Value |
+| | |
 | --- | --- |
 | **Attribute** | `authorized_verification_proof` |
 | **Description** | Specifies the evidence used to confirm that the applicant is authorized by the property owner to apply for or hold the business licence. |
